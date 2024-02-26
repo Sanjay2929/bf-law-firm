@@ -13,10 +13,14 @@
 
 <body>
     <main class="bg_black position-relative">
-        <div class="px-3 mx-auto d-flex position-relative z-3">
-            <div class="side_nav ps-5 py-5 flex-column">
-                <img src="/assests/images/icons/logo.svg" alt="logo">
-                <ul class="d-flex mt-5 ms-2 flex-column ps-0">
+        <div class="px-3 mx-auto d-flex flex-md-row flex-column position-relative z-3">
+            <div class="side_nav ps-lg-5 pe-lg-0 px-md-4 md:py-5 py-3 flex-md-column flex-row">
+                <div class="d-md-none d-inline-block pe-3">
+                    <img onclick="showNav()" class="mobile-nav-icon cursor_pointer" id="navToggleIcon"
+                        src="/assests/images/icons/nav-toggle.svg" alt="toggle" />
+                </div>
+                <img class="" src="/assests/images/icons/logo.svg" alt="logo">
+                <ul id="navBar" class="d-flex mt-5 ms-2 flex-column ps-0 navbar_links ">
                     <li>
                         <a class="" href="#">Home</a>
                     </li>
@@ -34,22 +38,32 @@
                     </li>
                 </ul>
             </div>
-            <div class="hero_section color_white d-flex flex-column justify-content-center position-relative ps-3">
-                <h1 class="fs_sm fw-bold pt-5 text-uppercase mb-3">REAL ESTATE. BUSINESS. CONSTRUCTION.</h1>
+            <div class="hero_section color_white d-flex flex-column justify-content-center position-relative md:ps-3">
+                <h1 class="fs_sm fw-bold sm:pt-5 pt-4 text-uppercase mb-3">REAL ESTATE. BUSINESS. CONSTRUCTION.</h1>
                 <h2 class="color_white fs_8xl fw-bolder">
                     WE
                     <span class="d-block">ARE</span>
                     <span class="advocate_text color_bittersweet">ADVOCATES</span>
                 </h2>
-                <a class="scroll_down position-absolute" href="#"><img src="/assests/images/header/scroll-down.svg" alt="scroll_down"></a>
+                <a class="scroll_down position-absolute" href="#"><img src="/assests/images/header/scroll-down.svg"
+                        alt="scroll_down"></a>
             </div>
         </div>
-        <img class="parthners position-absolute end-0 bottom-0" src="/assests/images/header/characters-home.png" alt="partners">
-        <img class="bf_bg_logo position-absolute end-0 bottom-0" src="/assests/images/header/header-bg.svg" alt="bf-logo">
+        <img class="parthners position-absolute end-0 bottom-0" src="/assests/images/header/characters-home.png"
+            alt="partners">
+        <img class="bf_bg_logo position-absolute end-0 bottom-0" src="/assests/images/header/header-bg.svg"
+            alt="bf-logo">
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>function showNav() {
+            document.getElementById("navBar").classList.toggle("showNav");
+            document.body.classList.toggle("nav_mobile_scroll");
+            document.getElementById("navToggleIcon").src = navBar.classList.contains("showNav")
+                ? "/assests/images/icons/Cross.svg"
+                : "/assests/images/icons/nav-toggle.svg";
+        }</script>
 </body>
 
 </html>
