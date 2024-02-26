@@ -1,7 +1,15 @@
+$font-family_1: "Roboto", sans-serif;
+
 @import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family_1;
 }
+$color_1: var(--bittersweet);
+$color_2: white;
+$color_3: black;
+$background-color_1: white;
+$background-color_2: black;
+// root
 :root {
   --fs-xsm: 13px;
   --fs-sm: 16px;
@@ -13,6 +21,7 @@ body {
   --fs-8xl: 144px;
   --bittersweet: #fe6a5b;
 }
+/* font sizes  */
 .fs_xsm {
   font-size: var(--fs-xsm);
 }
@@ -37,21 +46,24 @@ body {
 .fs_8xl {
   font-size: var(--fs-8xl);
 }
+/* colors  */
 .color_bittersweet {
-  color: var(--bittersweet);
+  color: $color_1;
 }
 .color_white {
-  color: #fff;
+  color: $color_2;
 }
 .color_black {
-  color: #000;
+  color: $color_3;
 }
+// background colors
 .bg_white {
-  background-color: #fff;
+  background-color: $background-color_1;
 }
 .bg_black {
-  background-color: #000;
+  background-color: $background-color_2;
 }
+/* font weight  */
 .fw_400 {
   font-weight: 400;
 }
