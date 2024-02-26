@@ -1,14 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
 .mt_150 {
   margin-top: 150px;
 }
-
 .milad_section {
   max-width: 1440px;
-  margin: 0 auto;
 }
 .border_one_side_top {
   border-radius: 200px 0px 0px 0px;
 }
-.d_flex {
-  display: flex;
+.ml_200 {
+  margin-left: 200px;
+}
+.inverted_comma {
+  margin-top: -13px;
+}
+.milad_para {
+  max-width: 480px;
+}
+.letter_0-3 {
+  letter-spacing: -0.03em;
+}
+.opacity_07 {
+  opacity: 0.7;
+}
+.attorney_text {
+  letter-spacing: -0.03em;
+}
+.lh_100 {
+  line-height: 100%;
+}
+.bio_button {
+  cursor: pointer;
+  max-width: 200px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+.transition_03 {
+  transition: all 0.3s ease-in-out;
+}
+.bio_button:hover {
+  color: #fe6a5b !important;
+  background: #000000 !important;
+  border: 1px solid #fe6a5b;
+}
+.founder_man_img {
+  margin-top: -150px;
+}
+.founder_women_img {
+  margin-top: -150px;
+}
+.Cheryl_para {
+  max-width: 482px;
+}
+
+.ml_100 {
+  margin-left: 100px;
 }

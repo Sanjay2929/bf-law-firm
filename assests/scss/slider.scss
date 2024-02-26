@@ -1,26 +1,80 @@
 .container {
   max-width: 1320px;
   margin: 0px auto;
-  padding: 0px 12px;
+  padding: 80px 12px;
 }
 
-.slider-gap {
-  display: flex;
-  gap: 20px;
+.slick-prev {
+  max-width: 72px !important;
+}
+.slick-next {
+  max-width: 72px;
 }
 
+.relative {
+  position: relative;
+}
+
+.slider {
+  max-width: 1320px;
+}
+
+.slider-arrow {
+  display: flex !important;
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+
+.title {
+  max-width: 326px;
+}
+
+.left-arrow path {
+  fill: #35c316;
+}
+
+.text-normal {
+  line-height: 100%;
+  max-height: 211px;
+  overflow-y: scroll;
+  margin-bottom: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 .slide-card {
-  width: 382px;
-  height: 469px;
+  //   max-width: 382px !important;
+  // width: 100%;
+  min-height: 469px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 24px;
+  margin-left: 20px;
   background: #ffffff;
   border: 4px solid #000000;
   border-radius: 0px 0px 48px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 300ms linear;
 
   &:hover {
-    scale: 0.9;
+    scale: 0.95;
   }
+}
+
+// Define a variable for the base color
+$baseColor: #fe6a5b;
+
+// Use the variable in the fill property
+svg {
+  fill: $baseColor;
+  transition: fill 0.3s ease; // Add a transition for a smooth color change
+}
+
+// On hover, change the fill color
+svg:hover {
+  fill: #35c316; // Change this to the color you want on hover
 }
