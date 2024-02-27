@@ -39,6 +39,9 @@
   background-color: white;
   margin: 16px 0;
 }
+.opacity_05 {
+  opacity: 0.5;
+}
 .opacity_07 {
   opacity: 0.7;
 }
@@ -47,6 +50,9 @@
 }
 .lh_100 {
   line-height: 100%;
+}
+.lh_160 {
+  line-height: 160%;
 }
 .bio_button {
   cursor: pointer;
@@ -114,6 +120,77 @@
   height: 1041px;
   right: 20%;
 }
+// ANYTHING SECTION
+.anything_section {
+  margin-top: -11px;
+}
+.anything_container {
+  max-width: 900px;
+}
+.anything_second_para {
+  max-width: 320px;
+}
+.contact_form {
+  display: block;
+  width: 100% !important;
+  padding: 10px !important;
+  border: 1px solid #fff !important;
+  border-radius: 8px !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+.contact_form_btn {
+  border: 1px solid #fe6a5b;
+  width: 100%;
+  border-radius: 8px;
+  height: 48px;
+  background: #fe6a5b;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: inherit;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.contact_form_btn:hover {
+  color: #fe6a5b !important;
+  background: #000000 !important;
+  border: 1px solid #fe6a5b;
+}
+.anything_link_text_hover:hover {
+  color: #e84a5f !important;
+}
+.anything_heading {
+  max-width: 310px;
+}
+// FOOTER
+.footer_logo {
+  width: 180px;
+}
+.footer_gray_hr {
+  opacity: 0.25;
+}
+.social_icons_margin {
+  margin-left: 200px;
+}
+
+footer a:hover svg path {
+  fill: #4f4f4f;
+}
+.image_col {
+  width: 25% !important;
+}
+.footer_link_col {
+  width: 75% !important;
+}
+.pointer_event_none{
+  pointer-events: none;
+}
 @media (max-width: 1299.98px) {
   .milad_parent_margin {
     margin-left: 100px;
@@ -131,6 +208,25 @@
   }
   .hammer_img {
     width: 100%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .padding_xl_footer_col {
+    padding: 0 50px !important;
+  }
+  .footer_logo {
+    width: 115px;
+  }
+  .social_icons_margin {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1179.98px) {
+  .image_col {
+    width: 15% !important;
+  }
+  .footer_link_col {
+    width: 85% !important;
   }
 }
 @media (max-width: 1023.98px) {
@@ -163,6 +259,15 @@
   .Cheryl_main_parent {
     margin: 0 100px;
   }
+  .image_col {
+    width: 2% !important;
+  }
+  .footer_link_col {
+    width: 98% !important;
+  }
+  .padding_xl_footer_col {
+    padding: 0 20px !important;
+  }
 }
 @media (max-width: 768.98px) {
   .founder_man_img {
@@ -183,6 +288,9 @@
   .border_one_side_top {
     border-radius: 88px 0px 0px 0px;
   }
+  .anything_second_para {
+    max-width: unset;
+  }
   .hammer_img {
     width: 100%;
     height: 500px;
@@ -191,11 +299,17 @@
     top: 180px;
     right: 20%;
   }
+  .anything_heading {
+    max-width: unset;
+  }
   .litigation_section_margin {
     margin-top: 80px !important;
   }
   .litigation_main_parent {
     height: 680px;
+  }
+  .social_icons_margin {
+    margin-left: 0px;
   }
 }
 @media (max-width: 575.98px) {
