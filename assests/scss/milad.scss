@@ -95,7 +95,7 @@
   height: 1050px;
 }
 .litigation_section_margin {
-  margin-top: 150px;
+  margin-top: 150px !important;
 }
 .peach_hr {
   width: 27px;
@@ -103,7 +103,18 @@
   opacity: 1;
   height: 1px;
 }
-@media (max-width: 1300px) {
+.litigation_section_img {
+  margin-top: 150px;
+  position: relative;
+}
+.hammer_img {
+  width: 454px;
+  position: absolute;
+  top: 0px;
+  height: 1041px;
+  right: 20%;
+}
+@media (max-width: 1299.98px) {
   .milad_parent_margin {
     margin-left: 100px;
   }
@@ -118,10 +129,21 @@
   .Cheryl_main_parent {
     margin-left: 0;
   }
+  .hammer_img {
+    width: 100%;
+  }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023.98px) {
   .founder_women_img {
     margin-top: -80px !important;
+  }
+  .hammer_img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    position: absolute;
+    top: 240px;
+    right: 10%;
   }
 }
 @media (max-width: 991.98px) {
@@ -142,7 +164,7 @@
     margin: 0 100px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768.98px) {
   .founder_man_img {
     width: 320px !important;
     margin-top: -230px !important;
@@ -161,8 +183,22 @@
   .border_one_side_top {
     border-radius: 88px 0px 0px 0px;
   }
+  .hammer_img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    position: absolute;
+    top: 180px;
+    right: 20%;
+  }
+  .litigation_section_margin {
+    margin-top: 80px !important;
+  }
+  .litigation_main_parent {
+    height: 680px;
+  }
 }
-@media (max-width: 575px) {
+@media (max-width: 575.98px) {
   .founder_man_img {
     width: 100% !important;
     margin-top: -200px !important;
@@ -188,8 +224,20 @@
     height: 80px;
     margin-left: 25px;
   }
+  .hammer_img {
+    width: 100%;
+    height: 371px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    position: absolute;
+    top: -100px;
+    right: -20%;
+  }
+  .litigation_main_parent {
+    height: 920px;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 499.98px) {
   .founder_women_img {
     margin-top: 0px !important;
   }
