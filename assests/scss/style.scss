@@ -212,9 +212,9 @@ main {
 .corporate {
   max-width: 1440px;
   padding-top: 150px;
-   @media (max-width: 575.9px) {
-        padding-top: 70px;
-    }
+  @media (max-width: 767.9px) {
+    padding-top: 70px;
+  }
   .dollor {
     @media (max-width: 575.9px) {
       max-width: 300px;
@@ -230,7 +230,33 @@ main {
     }
   }
 }
-
+// Construction
+.construction {
+  max-width: 1440px;
+  @media (max-width: 767.9px) {
+    padding-top: 70px;
+  }
+  .construction_crane {
+    @media (max-width: 575.9px) {
+      max-width: 300px;
+    }
+    img {
+      object-position: bottom;
+    }
+  }
+  .construction_deals {
+    margin-top: 70px;
+     @media (max-width: 767.9px) {
+      margin-top: 0px;
+    }
+    div {
+      max-width: 450px;
+    }
+    p {
+      max-width: 350px;
+    }
+  }
+}
 @media (max-width: 767.9px) {
   .nav_mobile_scroll {
     overflow: hidden;
