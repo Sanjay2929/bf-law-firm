@@ -23,21 +23,49 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
     <title>Slick Slider Example</title>
   </head>
   <body>
-    <div class="container relative">
-      <h2 class="fw-bold text-space fs_8xl text-space">News</h2>
-      <p class="text-black mb-0 pb-3 pt-2 text-space">
+    <div class="container mx-auto position-relative overflow-hidden">
+      <h2 class="fw-bold ms-sm-5 ps-sm-5 ps-3 text-space fs_8xl text-space">
+        News
+      </h2>
+      <p class="text-black ms-sm-5 ps-sm-5 ps-3 mb-0 pb-3 pt-2 text-space">
         Developments, trends, and opinions that move us at Boddoohi &
         Friedlander LLP, but also beyond.
       </p>
       <div class="slider-arrow">
-        <div class="slick-prev">
-          <img src="./assests/images/icons/arrow-left.svg" alt="arrow-left" />
-        </div>
-        <div class="slick-next">
-          <img src="./assests/images/icons/arrow-right.svg" alt="arrow-right" />
+        <a href="#" class="slick-prev">
+          <svg
+            width="72"
+            height="54"
+            viewBox="0 0 72 54"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="hover_svg"
+              d="M19.3706 25.5H61.4999V28.5H19.3706V33L10.4999 27L19.3706 21V25.5Z"
+              fill="#FE6A5B"
+            ></path>
+          </svg>
+        </a>
+        <div class="slick-next transition_03">
+          <a href="#">
+            <svg
+              width="72"
+              height="54"
+              viewBox="0 0 72 54"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="hover_svg"
+                d="M52.6294 25.5H10.5001V28.5H52.6294V33L61.5001 27L52.6294 21V25.5Z"
+                fill="#FE6A5B"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="slider my-5">
+      <div class="slider my-5 ms-sm-5 ps-sm-5 ps-3">
         <div class="slide-card p-sm-4 p-3 d-flex justify-content-between">
           <h3 class="fs_xl fw-bold text-space text-black mb-0">
             Another big win in the SDNY

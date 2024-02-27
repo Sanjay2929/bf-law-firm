@@ -1,22 +1,55 @@
 .container {
-  max-width: 1320px;
+  max-width: 1320px !important;
+  transition: all 300ms linear !important;
   margin: 0px auto;
-  padding: 48px 48px;
+  padding: 12px 48px;
 }
 
 .slick-prev {
   max-width: 72px !important;
+  transition: all 300ms linear !important;
+  &:hover {
+    svg {
+      .hover_svg {
+        fill: #dc9a87;
+      }
+    }
+  }
+}
+.hover_svg {
+  transition: all 0.3s ease-in-out;
 }
 .slick-next {
   max-width: 72px;
-}
-
-.relative {
-  position: relative;
+  &:hover {
+    svg {
+      .hover_svg {
+        fill: #dc9a87;
+      }
+    }
+  }
 }
 
 .slider {
   max-width: 1320px;
+  .slick-track {
+    margin-left: -14%;
+  }
+  @media (max-width: 1139.98px) {
+    .slick-track {
+      margin-left: 0%;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .slick-track {
+      margin-left: 33.5%;
+    }
+  }
+  @media (max-width: 499.98px) {
+    .slick-track {
+      margin-left: 0%;
+    }
+  }
 }
 
 .slider-arrow {
@@ -24,6 +57,9 @@
   position: absolute;
   top: 18%;
   right: 10%;
+  @media (max-width: 767.98px) {
+    top: 2%;
+  }
 }
 
 .text-space {
@@ -56,28 +92,7 @@
   &:hover {
     scale: 0.95;
   }
-}
-
-@media (max-width: 991.98px) {
-  .slider-arrow {
-    display: flex !important;
-    position: absolute;
-    top: 8%;
-    right: 10%;
-  }
-}
-@media (max-width: 575.98px) {
-  .slider-arrow {
-    display: flex !important;
-    position: absolute;
-    top: 8%;
-    right: 10%;
-  }
-  .slide-card {
+  @media (max-width: 575.98px) {
     min-height: 360px !important;
-
-    &:hover {
-      scale: 0.95;
-    }
   }
 }

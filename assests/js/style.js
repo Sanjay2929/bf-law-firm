@@ -3,10 +3,10 @@ $(document).ready(function () {
     dots: false,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     pauseOnHover: true,
     slidesToScroll: 1,
-    slidesToShow: 3.4,
+    slidesToShow: 3.5,
     prevArrow: $(".slick-prev"),
     nextArrow: $(".slick-next"),
     responsive: [
