@@ -1,10 +1,10 @@
 $(document).ready(function () {
   $(".slider").slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    centerMode: false,
-    variableWidth: false,
+    autoplay: true,
+    pauseOnHover: true,
     slidesToScroll: 1,
     slidesToShow: 3.4,
     prevArrow: $(".slick-prev"),
