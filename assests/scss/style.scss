@@ -189,6 +189,26 @@ main {
     line-height: 100%;
   }
 }
+// Real Estate section
+.real_estate {
+  max-width: 1440px;
+  border-radius: 0 0 231px 0;
+  @media (max-width: 767.9px) {
+    border-radius: 0 0 100px 0;
+  }
+  .estate_building {
+     @media (max-width: 575.9px) {
+    max-width: 345px;
+  }
+    img {
+      object-position: bottom;
+    }
+  }
+  .real_estate_deals {
+    max-width: 556px;
+  }
+}
+
 @media (max-width: 767.9px) {
   .nav_mobile_scroll {
     overflow: hidden;
