@@ -1,12 +1,12 @@
 $(document).ready(function () {
   $(".slider").slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    centerMode: false,
-    variableWidth: false,
+    autoplay: false,
+    pauseOnHover: true,
     slidesToScroll: 1,
-    slidesToShow: 3.4,
+    slidesToShow: 3.5,
     prevArrow: $(".slick-prev"),
     nextArrow: $(".slick-next"),
     responsive: [
