@@ -126,6 +126,7 @@
 }
 .anything_container {
   max-width: 900px;
+  margin-bottom: -2px;
 }
 .anything_second_para {
   max-width: 320px;
@@ -195,7 +196,7 @@ footer a:hover svg path {
   max-width: 1440px;
   margin: 0 auto !important;
 }
-.footer_links_hover:hover{
+.footer_links_hover:hover {
   color: #fe6a5b !important;
 }
 @media (max-width: 1299.98px) {
