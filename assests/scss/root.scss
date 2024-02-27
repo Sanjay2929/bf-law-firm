@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif !important;
 }
+
 $color_1: var(--bittersweet);
 $background-color_2: var(--bittersweet);
 // root
@@ -17,31 +18,40 @@ $background-color_2: var(--bittersweet);
   --fs-8xl: 144px;
   --bittersweet: #fe6a5b;
 }
+
 /* font sizes  */
 .fs_xsm {
   font-size: var(--fs-xsm);
 }
+
 .fs_sm {
   font-size: var(--fs-sm);
 }
+
 .fs_md {
   font-size: var(--fs-md);
 }
+
 .fs_lg {
   font-size: var(--fs-lg);
 }
+
 .fs_xl {
   font-size: var(--fs-xl);
 }
+
 .fs_2xl {
   font-size: var(--fs-2xl);
 }
+
 .fs_5xl {
   font-size: var(--fs-5xl);
 }
+
 .fs_8xl {
   font-size: var(--fs-8xl);
 }
+
 /* colors  */
 .color_bittersweet {
   color: $color_1;
