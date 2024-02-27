@@ -197,15 +197,37 @@ main {
     border-radius: 0 0 100px 0;
   }
   .estate_building {
-     @media (max-width: 575.9px) {
-    max-width: 345px;
-  }
+    @media (max-width: 575.9px) {
+      max-width: 345px;
+    }
     img {
       object-position: bottom;
     }
   }
   .real_estate_deals {
     max-width: 556px;
+  }
+}
+// Business & Corporate section
+.corporate {
+  max-width: 1440px;
+  padding-top: 150px;
+   @media (max-width: 575.9px) {
+        padding-top: 70px;
+    }
+  .dollor {
+    @media (max-width: 575.9px) {
+      max-width: 300px;
+    }
+    img {
+      object-position: bottom;
+    }
+  }
+  .corporate_deals {
+    max-width: 600px;
+    p {
+      max-width: 350px;
+    }
   }
 }
 
