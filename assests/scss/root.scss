@@ -109,7 +109,7 @@ $background-color_2: var(--bittersweet);
     --fs-8xl: 80px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 765.9px) {
   :root {
     --fs-xsm: 13px;
     --fs-sm: 16px;
@@ -119,5 +119,17 @@ $background-color_2: var(--bittersweet);
     --fs-2xl: 26px;
     --fs-5xl: 48px;
     --fs-8xl: 80px;
+  }
+}
+@media (max-width: 575.9px) { 
+  :root {
+    --fs-xsm: 13px;
+    --fs-sm: 14px;
+    --fs-md: 21px;
+    --fs-lg: 20px;
+    --fs-xl: 28px;
+    --fs-2xl: 26px;
+    --fs-5xl: 36px;
+    --fs-8xl: 40px;
   }
 }
