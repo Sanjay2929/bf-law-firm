@@ -62,6 +62,18 @@ $background-color_2: var(--bittersweet);
     --fs-8xl: 100px;
   }
 }
+@media (max-width: 1024px) {
+  :root {
+    --fs-xsm: 13px;
+    --fs-sm: 16px;
+    --fs-md: 21px;
+    --fs-lg: 20px;
+    --fs-xl: 28px;
+    --fs-2xl: 32px;
+    --fs-5xl: 96px;
+    --fs-8xl: 100px;
+  }
+}
 @media (max-width: 992px) {
   :root {
     --fs-xsm: 13px;
@@ -70,6 +82,30 @@ $background-color_2: var(--bittersweet);
     --fs-lg: 27px;
     --fs-xl: 28px;
     --fs-2xl: 40px;
+    --fs-5xl: 96px;
+    --fs-8xl: 80px;
+  }
+}
+@media (max-width: 992px) {
+  :root {
+    --fs-xsm: 13px;
+    --fs-sm: 16px;
+    --fs-md: 21px;
+    --fs-lg: 20px;
+    --fs-xl: 28px;
+    --fs-2xl: 32px;
+    --fs-5xl: 96px;
+    --fs-8xl: 80px;
+  }
+}
+@media (max-width: 576px) {
+  :root {
+    --fs-xsm: 13px;
+    --fs-sm: 16px;
+    --fs-md: 21px;
+    --fs-lg: 20px;
+    --fs-xl: 28px;
+    --fs-2xl: 26px;
     --fs-5xl: 96px;
     --fs-8xl: 80px;
   }

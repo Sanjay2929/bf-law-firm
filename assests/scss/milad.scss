@@ -14,7 +14,7 @@
 .border_one_side_top {
   border-radius: 200px 0px 0px 0px;
 }
-.ml_200 {
+.milad_parent_margin {
   margin-left: 200px;
 }
 .inverted_comma {
@@ -60,6 +60,112 @@
   max-width: 482px;
 }
 
-.ml_100 {
+.Cheryl_main_parent {
   margin-left: 100px;
+}
+.social_icons {
+  &:hover {
+    svg {
+      .hover_svg {
+        fill: #757575;
+      }
+    }
+  }
+}
+.hover_svg {
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1300px) {
+  .milad_parent_margin {
+    margin-left: 100px;
+  }
+  .founder_man_img {
+    width: 500px;
+    margin-top: -80px !important;
+  }
+  .founder_women_img {
+    width: 500px;
+    margin-top: 40px !important;
+  }
+  .Cheryl_main_parent {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .founder_women_img {
+    margin-top: -80px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .founder_man_img {
+    width: 100%;
+    max-width: 320px;
+    margin-top: -300px !important;
+  }
+  .founder_women_img {
+    width: 100%;
+    max-width: 320px;
+  }
+  .founder_women_img {
+    width: 500px;
+    margin-top: -260px !important;
+  }
+  .Cheryl_main_parent {
+    margin: 0 100px;
+  }
+}
+@media (max-width: 768px) {
+  .founder_man_img {
+    width: 320px !important;
+    margin-top: -230px !important;
+  }
+  .milad_parent_margin {
+    margin: 0 60px;
+  }
+  .Cheryl_main_parent {
+    margin: 0 60px;
+  }
+  .founder_women_img {
+    width: 350px;
+    margin-top: -230px !important;
+    margin-left: auto !important;
+  }
+  .border_one_side_top {
+    border-radius: 88px 0px 0px 0px;
+  }
+}
+@media (max-width: 575px) {
+  .founder_man_img {
+    width: 100% !important;
+    margin-top: -200px !important;
+    object-fit: contain;
+    height: 400px;
+  }
+  .milad_parent_margin {
+    margin: 0 20px;
+    padding-right: 20px;
+  }
+  .Cheryl_main_parent {
+    margin: 0 20px;
+  }
+  .founder_women_img {
+    height: 400px;
+    margin-top: -200px !important;
+    margin-left: auto;
+    object-fit: contain;
+    margin-right: -60px;
+  }
+  .inverted_comma {
+    width: 103px;
+    height: 80px;
+    margin-left: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .founder_women_img {
+    margin-top: 0px !important;
+  }
+  .founder_man_img {
+    margin-top: 0px !important;
+  }
 }
