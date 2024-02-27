@@ -26,17 +26,13 @@
   right: 10%;
 }
 
-.title {
-  max-width: 326px;
-}
-
-.left-arrow path {
-  fill: #35c316;
+.title-space {
+  line-height: 100%;
 }
 
 .text-normal {
   line-height: 100%;
-  max-height: 211px;
+  max-height: 210px;
   overflow-y: scroll;
   margin-bottom: 0;
 }
@@ -44,8 +40,6 @@
   display: none;
 }
 .slide-card {
-  //   max-width: 382px !important;
-  // width: 100%;
   min-height: 469px !important;
   display: flex;
   flex-direction: column;
@@ -63,18 +57,4 @@
   &:hover {
     scale: 0.95;
   }
-}
-
-// Define a variable for the base color
-$baseColor: #fe6a5b;
-
-// Use the variable in the fill property
-svg {
-  fill: $baseColor;
-  transition: fill 0.3s ease; // Add a transition for a smooth color change
-}
-
-// On hover, change the fill color
-svg:hover {
-  fill: #35c316; // Change this to the color you want on hover
 }

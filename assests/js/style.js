@@ -5,12 +5,17 @@ $(document).ready(function () {
     speed: 500,
     centerMode: false,
     variableWidth: false,
-    autoplay: true,
     slidesToScroll: 1,
     slidesToShow: 3.4,
     prevArrow: $(".slick-prev"),
     nextArrow: $(".slick-next"),
     responsive: [
+      {
+        breakpoint: 1140,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -24,7 +29,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
         },
