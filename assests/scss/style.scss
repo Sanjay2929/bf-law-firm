@@ -262,15 +262,7 @@ main {
 .we_deal_with {
   padding-left: 40px;
 }
-:after {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 1px;
-  background-color: #fe6a5b;
-  left: 0;
-  top: 50%;
-}
+
 @media (max-width: 767.9px) {
   .nav_mobile_scroll {
     overflow: hidden;
