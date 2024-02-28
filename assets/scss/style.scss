@@ -167,10 +167,10 @@ main {
     }
   }
   .parthners {
-    height: 82%;
+    height: 89%;
     z-index: 1;
     @media (max-width: 1440px) {
-      max-width: 43%;
+      max-width: 42%;
       height: auto;
       max-height: 100%;
     }
@@ -184,7 +184,9 @@ main {
     }
   }
   .bf_bg_logo {
-    height: 100%;
+    // height: 100% !important;
+    max-width: 30%;
+    width: 100%;
     top: 0;
     z-index: 0;
     @media (max-width: 1440px) {
