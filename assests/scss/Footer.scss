@@ -118,3 +118,8 @@ body {
 textarea {
   resize: vertical;
 }
+  @media  (max-width:575.98px) {
+    .position_sm_absolute{
+      position: absolute !important;
+    }
+  }
