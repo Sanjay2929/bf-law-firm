@@ -5,18 +5,23 @@
     list-style: none;
     text-decoration: none !important;
 }
-.color_red{
-        color: #fe6a5b;
+
+.color_red {
+    color: #fe6a5b;
 }
+
 .font-opacity {
     opacity: 0.7;
 }
+
 .transition_03s {
     transition: all 0.3s ease-in-out;
 }
+
 a:hover rect {
     fill: #6c6969;
 }
+
 $color_1: #6c6969;
 
 .back_to_top_header {
@@ -28,15 +33,19 @@ $color_1: #6c6969;
 .letter-01 {
     letter-spacing: 0.01em;
 }
-.text_normal{
+
+.text_normal {
     line-height: 100% !important;
 }
+
 @media (min-width:1024px) {
-    .position_fixed{
+    .position_fixed {
         position: fixed;
     }
 }
+
 @media (min-width: 1200px) {
-.header_logo {
-    width: 180px;
-}}
+    .header_logo {
+        width: 180px;
+    }
+}
