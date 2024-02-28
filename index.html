@@ -30,12 +30,18 @@
     <meta property="twitter:description" content="REAL ESTATE. BUSINESS. CONSTRUCTION." />
     <meta property="twitter:image" content=" https://bf-law-firm.vercel.app/se_img.webp" />
 
+    <!-- Bootstrap link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <!-- slider link  -->
+    <link href="
+https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
+" rel="stylesheet" />
+    <!-- custum css links  -->
     <link rel="stylesheet" href="./assests/scss/milad.css">
     <link rel="stylesheet" href="./assests/scss/root.css">
     <link rel="stylesheet" href="./assests/scss/style.css">
+    <link rel="stylesheet" href="/assests/scss/slider.css" />
 
 </head>
 
@@ -74,7 +80,7 @@
                     <span class="d-block">ARE</span>
                     <span class="advocate_text color_bittersweet">ADVOCATES</span>
                 </h2>
-                <a class="scroll_down position-absolute" href="#"><img class="w-100"
+                <a class="scroll_down position-absolute" href="#advise"><img class="w-100"
                         src="/assests/images/header/scroll-down.svg" alt="scroll_down"></a>
             </div>
         </div>
@@ -84,7 +90,7 @@
             alt="bf-logo">
     </main>
     <!-- advise section  -->
-    <div class="position-relative py-md-5">
+    <div class="position-relative py-md-5" id="advise">
         <div class="custom_container container mx-auto">
             <h2 class="advise fs_5xl text-black fw-bold mx-auto"><span class="color_bittersweet"><span class="d-block">
                         We advise
@@ -107,7 +113,8 @@
             <div class="col-sm-6 col-12 pt-4 pb-4 px-md-3 px-sm-0 px-3">
                 <div class="p-xl-5 p-lg-4 pe-md-4 ms-lg-4 real_estate_deals">
                     <div class="ms-sm-4">
-                        <h5 class="letter_03 text-uppercase color_bittersweet ms-2 mb-0 fs_sm fw-bold lh_100">
+                        <h5
+                            class="letter_03 text-uppercase color_bittersweet ms-2 mb-0 fs_sm fw-bold lh_100 we_deal_with position-relative">
                             We deal with
                         </h5>
                         <h2 class="letter_0-5 text-black mt-sm-3 mb-2 fw-bold lh_100 fs_5xl">
@@ -150,7 +157,7 @@
             <div class="col-sm-6 col-lg-7 col-12 pt-4 pb-4 pe-md-3 pe-md-0 pe-3 ps-md-5 pb-4">
                 <div class="p-xl-5 p-lg-4 pe-md-4 ms-lg-4 corporate_deals">
                     <div class="ms-sm-4">
-                        <h5 class="letter_03 text-uppercase color_bittersweet ms-2 mb-0 fs_sm fw-bold lh_100">
+                        <h5 class="letter_03 text-uppercase color_bittersweet ms-2 mb-0 fs_sm fw-bold lh_100 we_deal_with position-relative">
                             We deal with
                         </h5>
                         <h2 class="letter_0-5 text-white mt-sm-3 mb-2 fw-bold lh_100 fs_5xl">
@@ -195,7 +202,7 @@
             <div class="col-sm-6 col-12 pt-4 pb-4 px-md-3 px-sm-0 px-3">
                 <div class="py-xl-5 py-lg-4 pe-xl-5 pe-lg-4 pe-md-4 ms-lg-4 construction_deals">
                     <div class="ms-sm-4">
-                        <h5 class="letter_03 text-uppercase color_bittersweet ms-2 mb-0 fs_sm fw-bold lh_100">
+                        <h5 class="letter_03 text-uppercase color_bittersweet ms-2 mb-0 fs_sm fw-bold lh_100 we_deal_with position-relative">
                             We deal with
                         </h5>
                         <h2 class="letter_0-5 text-black mt-sm-3 mb-2 fw-bold lh_100 fs_5xl">
@@ -270,6 +277,90 @@
                 <div class="litigation_section_img">
                     <img src="./assests/images/litigation/hammer.png" alt="hammer image" class="hammer_img">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto position-relative overflow-hidden">
+        <h2 class="fw-bold ms-sm-5 ps-sm-5 ps-3 text-space fs_8xl text-space">
+            News
+        </h2>
+        <p class="text-black ms-sm-5 ps-sm-5 ps-3 mb-0 pb-3 pt-2 text-space">
+            Developments, trends, and opinions that move us at Boddoohi &
+            Friedlander LLP, but also beyond.
+        </p>
+        <div class="slider-arrow">
+            <a href="#" class="slick-prev">
+                <svg width="72" height="54" viewBox="0 0 72 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="hover_svg" d="M19.3706 25.5H61.4999V28.5H19.3706V33L10.4999 27L19.3706 21V25.5Z"
+                        fill="#FE6A5B"></path>
+                </svg>
+            </a>
+            <div class="slick-next transition_03">
+                <a href="#">
+                    <svg width="72" height="54" viewBox="0 0 72 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="hover_svg" d="M52.6294 25.5H10.5001V28.5H52.6294V33L61.5001 27L52.6294 21V25.5Z"
+                            fill="#FE6A5B"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="slider my-5 ms-sm-5 ps-sm-5 ps-3">
+            <div class="slide-card p-sm-4 p-3 d-flex justify-content-between">
+                <h3 class="fs_xl fw-bold text-space text-black mb-0">
+                    Another big win in the SDNY
+                </h3>
+                <p class="fs_sm text-normal text-black mb-0">
+                    This was round two in a battle between our client, a wonderful,
+                    well-known, and respected international travel company, and another
+                    travel company over purported claims of unfair competition under New
+                    York and California law. We obtained dismissal of the case once in
+                    August 2022, but the plaintiff was allowed to amend some of its
+                    claims. This time, Judge Valerie Caproni granted our motion and
+                    dismissed the amended complaint, with prejudice, and later awarded
+                    us costs and attorneys’ fees. York and California law. We obtained
+                    dismissal of the case once in August 2022, but the plaintiff was
+                    allowed to amend some of its claims. This time, Judge Valerie
+                    Caproni granted our motion and dismissed the amended complaint, with
+                    prejudice, and later awarded us costs and attorneys’ fees.
+                </p>
+            </div>
+            <div class="slide-card p-sm-4 p-3 d-flex justify-content-between">
+                <h3 class="fs_xl fw_bold text-space text-black mb-0">
+                    Esopus Updates Proposed Marina Camping Rules
+                </h3>
+                <p class="fs_sm text-normal text-black mb-0">
+                    On December 22, 2021, the New York State Legislature passed (and
+                    Governing Hochul signed into law) a law exempting cooperatives from
+                    several provisions of the HSTPA
+                </p>
+            </div>
+            <div class="slide-card p-sm-4 p-3 d-flex justify-content-between">
+                <h3 class="fs_xl fw_bold text-space text-black mb-0">
+                    Esopus Seeks to Revise Zoning for Marina RV Lodging
+                </h3>
+                <p class="fs_sm text-normal text-black mb-0">
+                    Milad Boddoohi quoted in the Daily Freeman concerning Town of Esopus
+                    vs. Castaways Marina
+                </p>
+            </div>
+            <div class="slide-card p-sm-4 p-3 d-flex justify-content-between">
+                <h3 class="fs_xl fw_bold text-space text-black mb-0">
+                    Another big win in the SDNY
+                </h3>
+                <p class="fs_sm text-normal text-black mb-0">
+                    On December 22, 2021, the New York State Legislature passed (and
+                    Governing Hochul signed into law) a law exempting cooperatives from
+                    several provisions of the HSTPA
+                </p>
+            </div>
+            <div class="slide-card p-sm-4 p-3 d-flex justify-content-between">
+                <h3 class="fs_xl fw_bold text-space text-black mb-0">
+                    Esopus Seeks to Revise Zoning for Marina RV Lodging
+                </h3>
+                <p class="fs_sm text-normal text-black mb-0">
+                    Milad Boddoohi quoted in the Daily Freeman concerning Town of Esopus
+                    vs. Castaways Marina
+                </p>
             </div>
         </div>
     </div>
@@ -522,7 +613,7 @@
                 <div class="mt-sm-5 pt-sm-5">
                     <div class="d-flex justify-content-center justify-content-md-start">
                         <div>
-                            <a href="index.html"><img class="footer_logo" src="./assests/images/icons/logo.svg" alt="logo" /></a>
+                            <a href="#"><img class="footer_logo" src="./assests/images/icons/logo.svg" alt="logo" /></a>
                             <div class="social_icons_margin d-flex d-md-none justify-content-center mt-md-0 mt-4">
                                 <a class="pe-3" href="https://www.facebook.com/thebflawfirm" target="_blank"
                                     rel="noopener noreferrer">
@@ -556,12 +647,17 @@
                     <div class="d-flex mt-2 item-center justify-content-center justify-content-md-start">
                         <div
                             class="d-flex flex-sm-row flex-column justify-content-center justify-content-sm-start align-items-center gap-sm-0 gap-2">
-                            <a class=" fs_sm fw-semibold text-white" href="#">Back to Top</a>
-                            <a href="./index.html#practice" class="ms-sm-5  fs_sm fw-semibold text-white">Practice
+                            <a class=" fs_sm fw-semibold text-white footer_links_hover transition_03" href="#">Back to
+                                Top</a>
+                            <a href="#"
+                                class="ms-sm-5  fs_sm fw-semibold text-white footer_links_hover transition_03">Practice
                                 Areas</a>
-                            <a href="news.html" class="ms-sm-5 fs_sm fw-semibold text-white">News</a>
-                            <a href="attorney-details.html" class="ms-sm-5  fs_sm fw-semibold text-white">Team</a>
-                            <a href="#contact" class="ms-sm-5  fs_sm fw-semibold text-white">Contact</a>
+                            <a href="#"
+                                class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">News</a>
+                            <a href="#"
+                                class="ms-sm-5  fs_sm fw-semibold text-white footer_links_hover transition_03">Team</a>
+                            <a href="#"
+                                class="ms-sm-5  fs_sm fw-semibold text-white footer_links_hover transition_03">Contact</a>
                         </div>
                         <div class="social_icons_margin d-md-flex d-none mt-sm-0 mt-4">
                             <a class="pe-3" href="https://www.facebook.com/thebflawfirm" target="_blank"
@@ -609,6 +705,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -619,6 +716,12 @@
                 ? "/assests/images/icons/Cross.svg"
                 : "/assests/images/icons/nav-toggle.svg";
         }</script>
+    <!-- slider script link  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+        "></script>
+    <script src="/assests/js/style.js"></script>
 </body>
 
 </html>
