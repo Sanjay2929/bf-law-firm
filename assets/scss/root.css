@@ -2,7 +2,6 @@
 body,
 html {
   font-family: "Roboto", sans-serif !important;
-  overflow-x: hidden;
 }
 :root {
   --fs-xsm: 13px;
