@@ -14,6 +14,7 @@ html {
   --fs-5xl: 96px;
   --fs-8xl: 144px;
   --bittersweet: #fe6a5b;
+  --fw-800: 800;
 }
 .fs_xsm {
   font-size: var(--fs-xsm);
@@ -38,6 +39,9 @@ html {
 }
 .fs_8xl {
   font-size: var(--fs-8xl);
+}
+.fw_800 {
+  font-weight: var(--fw-800);
 }
 .color_bittersweet {
   color: var(--bittersweet);
