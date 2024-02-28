@@ -6,7 +6,7 @@ $(document).ready(function () {
     autoplay: false,
     pauseOnHover: true,
     slidesToScroll: 1,
-    slidesToShow: 3.5,
+    slidesToShow: 3.4,
     prevArrow: $(".slick-prev"),
     nextArrow: $(".slick-next"),
     responsive: [
