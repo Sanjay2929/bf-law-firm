@@ -24,7 +24,7 @@ $(".news_slider").slick({
   infinite: true,
   slidesToShow: 3.2,
   centerMode: true,
-  centerPadding: "70px",
+  centerPadding: "75px",
   slidesToScroll: 1,
   prevArrow: $(".slick-prev"),
   nextArrow: $(".slick-next"),
