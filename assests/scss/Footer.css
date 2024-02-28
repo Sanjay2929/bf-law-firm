@@ -101,3 +101,13 @@ a:hover {
  color: #e84a5f !important;
   transition: all 0.3s ease-in-out;
 }
+.grey-hr {
+  width: 100% !important;
+  opacity: 0.15;
+}
+
+@media (max-width: 575.98px) {
+  .position_sm_absolute {
+    position: absolute !important;
+  }
+}

@@ -18,9 +18,11 @@ body {
   padding-top: 80px !important;
   padding-bottom: 80px !important;
 }
+
 .font-opacity {
   opacity: 0.7 !important;
 }
+
 .main-container {
   max-width: 900px;
   margin: 0 auto;
@@ -60,11 +62,13 @@ body {
 .chng_clr_hover {
   color: #fff !important;
   transition: all 250ms linear;
+
   &:hover {
     transition: all 250ms linear;
     color: #e84a5f !important;
   }
 }
+
 .contact_form {
   display: block;
   font-family: "Roboto", sans-serif;
@@ -79,14 +83,17 @@ body {
   background-color: transparent !important;
   color: #fff !important;
 }
+
 .background-white {
   background: #ffffff !important;
-}       
+}
+
 .contact_form_height {
   height: 98px !important;
 }
+
 .font-opacity1 {
-  opacity: 0.5 !important ;
+  opacity: 0.5 !important;
 }
 
 .contact_form_btn {
@@ -112,14 +119,22 @@ body {
     border: 1px solid #fe6a5b;
   }
 }
- footer a {
+
+footer a {
   color: #fff !important;
 }
+
 textarea {
   resize: vertical;
 }
-  @media  (max-width:575.98px) {
-    .position_sm_absolute{
-      position: absolute !important;
-    }
+.grey-hr {
+  width: 100%;
+  opacity: 0.15;
+  background: #000000;
+}
+
+@media (max-width: 575.98px) {
+  .position_sm_absolute {
+    position: absolute !important;
   }
+}
