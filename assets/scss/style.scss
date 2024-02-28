@@ -84,6 +84,11 @@ main {
       max-height: 1000px;
       height: 100vh;
       border-left: 1px solid #262626;
+      .news_hero_section {
+        min-height: 572px;
+        max-height: 1000px;
+        border-left: 1px solid #262626;
+      }
       @media (max-width: 1240px) {
         min-height: 600px;
         max-height: 700px;
