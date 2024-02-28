@@ -48,9 +48,9 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
 
 <body>
     <!-- hero section  -->
-    <main class="bg-black position-relative overflow-hidden">
-        <div class="px-3 mx-auto d-flex flex-md-row flex-column position-relative z-3 min-vh-100">
-            <div class="side_nav ps-lg-5 pe-lg-0 px-md-4 py-md-5 py-3 flex-md-column flex-row d-flex">
+    <main class="bg-black position-relative overflow-hidden"> 
+        <div class="px-3 mx-auto d-flex flex-md-row flex-column position-relative z-3">
+            <div class="side_nav ps-lg-5 pe-lg-0 px-md-4 md:py-5 py-3 flex-md-column flex-row d-flex">
                 <div class="d-md-none menu_icon d-flex pe-3">
                     <img onclick="showNav()" class="mobile-nav-icon cursor_pointer" id="navToggleIcon"
                         src="/assets/images/icons/nav-toggle.svg" alt="toggle" />
@@ -58,13 +58,13 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
                 <a href="#"><img class="" src="/assets/images/icons/logo.svg" alt="logo" /></a>
                 <ul id="navBar" class="d-flex mt-5 md:ms-2 flex-column ps-0 navbar_links">
                     <li class="home_link">
-                        <a class="" href="#">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
                         <a href="#">Practice Areas</a>
                     </li>
                     <li>
-                        <a href="news.html">News</a>
+                        <a href="#">News</a>
                     </li>
                     <li>
                         <a href="#">Team</a>
@@ -74,10 +74,25 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
                     </li>
                 </ul>
             </div>
-            <img class="parthners position-absolute end-0 bottom-0" src="/assets/images/header/characters-home.png"
-                alt="partners" />
-            <img class="bf_bg_logo position-absolute end-0 bottom-0" src="/assets/images/header/header-bg.svg"
-                alt="bf-logo" />
+            <div class="hero_section text-white d-flex flex-column justify-content-center position-relative ps-md-3">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="fs_sm fw-bold sm:pt-5 pt-4 text-uppercase mb-3">
+                        REAL ESTATE. BUSINESS. CONSTRUCTION.
+                    </h1>
+                    <h2 class="text-white fs_8xl fw-bolder">
+                        WE
+                        <span class="d-block">ARE</span>
+                        <span class="advocate_text color_bittersweet">ADVOCATES</span>
+                    </h2>
+                </div>
+                <a class="scroll_down position-absolute" href="#advise"><img class="w-100"
+                        src="/assets/images/header/scroll-down.svg" alt="scroll_down" /></a>
+            </div>
+        </div>
+        <img class="parthners position-absolute end-0 bottom-0" src="/assets/images/header/characters-home.png"
+            alt="partners" />
+        <img class="bf_bg_logo position-absolute end-0 bottom-0" src="/assets/images/header/header-bg.svg"
+            alt="bf-logo" />
     </main>
     <!-- advise section  -->
     <div class="position-relative py-md-5" id="advise">
