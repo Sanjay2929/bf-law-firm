@@ -101,7 +101,7 @@
   height: 1050px;
 }
 .litigation_section_margin {
-  margin-top: 150px !important;
+  margin-top: 90px !important;
 }
 .peach_hr {
   width: 27px;
@@ -119,6 +119,10 @@
   top: 0px;
   height: 1041px;
   right: 20%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 // ANYTHING SECTION
 .anything_section {
@@ -195,7 +199,7 @@ footer a:hover svg path {
   max-width: 1440px;
   margin: 0 auto !important;
 }
-.footer_links_hover:hover{
+.footer_links_hover:hover {
   color: #fe6a5b !important;
 }
 @media (max-width: 1299.98px) {
