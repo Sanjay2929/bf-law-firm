@@ -79,6 +79,33 @@ main {
         }
       }
     }
+    .news_link {
+      opacity: 1 !important;
+    }
+    .home_link a {
+      opacity: 1 !important;
+    }
+    #news:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background-color: #fe6a5b;
+      left: -40px;
+      top: 50%;
+      transition: all 0.3s ease-in-out;
+    }
+    .home_link:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background-color: #fe6a5b;
+      left: -40px;
+      top: 50%;
+      transition: all 0.3s ease-in-out;
+    }
+
     .hero_section {
       min-height: 772px;
       max-height: 1000px;

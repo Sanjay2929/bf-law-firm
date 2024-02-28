@@ -29,9 +29,10 @@
   transition: 0.5s;
   z-index: 1111;
 }
-.cards_margin_padding .data:hover .cards_box a,
-p,
-h3 {
+.cards_margin_padding .data:hover .cards_box a {
+  color: white !important;
+}
+.cards_margin_padding .data:hover .cards_box p {
   color: white !important;
 }
 .cards_margin_padding .data:hover .cards_box h3 {
@@ -44,7 +45,7 @@ h3 {
   z-index: 111;
   top: -200px;
   bottom: auto;
-  opacity: 0;
+  display: none;
   left: -50px;
   transition: 0.5s;
 }
@@ -52,7 +53,7 @@ h3 {
   position: relative;
 }
 .cards_margin_padding .data:hover .news-img {
-  opacity: 1;
+  display: block;
   transition: 0.5s;
 }
 .news_hero_image_desktop {
@@ -60,13 +61,22 @@ h3 {
   padding-left: 30px;
 }
 .news_side_nav {
-  width: 30%;
+  width: 18%;
 }
 .news_hero_image_mobile {
   display: none;
 }
 .cards_border_radius_one_side {
   border-radius: 0px 0px 231px 0px;
+}
+.letter_0_3 {
+  letter-spacing: 0.3em;
+}
+.back_to_top_header:hover h5 {
+  color: #6c6969 !important;
+}
+.back_to_top_header:hover svg path {
+  fill: #6c6969 !important;
 }
 @media (min-width: 820px) and (max-width: 992px) {
   .news_hero_image_desktop {
@@ -82,8 +92,11 @@ h3 {
     padding-left: 30px;
   }
   .cards_border_radius_one_side {
-  border-radius: 0px 0px 200px 0px;
-}
+    border-radius: 0px 0px 200px 0px;
+  }
+  .news_side_nav {
+    width: 22%;
+  }
 }
 @media (max-width: 1099.98px) {
   .news_hero_image_desktop {
@@ -92,13 +105,23 @@ h3 {
     padding-left: 10px;
   }
   .cards_border_radius_one_side {
-  border-radius: 0px 0px 180px 0px;
-}
+    border-radius: 0px 0px 180px 0px;
+  }
+  .news_side_nav {
+    width: 23%;
+  }
 }
 @media (max-width: 991.98px) {
   .cards_border_radius_one_side {
-  border-radius: 0px 0px 150px 0px;
-}
+    border-radius: 0px 0px 150px 0px;
+  }
+  .cards_margin_padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .news_side_nav {
+    width: 30%;
+  }
 }
 @media (max-width: 767.98px) {
   .news_hero_image_desktop {
@@ -110,6 +133,10 @@ h3 {
   .cards_border_radius_one_side {
     border-radius: 0px 0px 80px 0px;
   }
+  .cards_margin_padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 @media (max-width: 575.98px) {
   .cards_box {
@@ -117,5 +144,9 @@ h3 {
   }
   .new_data_card {
     min-height: 380px;
+  }
+  .cards_margin_padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
