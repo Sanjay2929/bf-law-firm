@@ -231,54 +231,45 @@ main {
       bottom: 0 !important;
     }
   }
+  .scroll_down {
+    bottom: 5%;
+    left: 16px;
+    @media (max-width: 767.98px) {
+      max-width: 40px;
+      bottom: -20%;
+    }
+    @media (max-width: 576.98px) {
+      max-width: 40px;
+      left: 0% !important;
+      top: 50%;
+    }
+  }
+  .parthners {
+    height: 100%;
+    z-index: 1;
+    @media (max-width: 1440px) {
+      max-width: 42%;
+      height: auto;
+      max-height: 100%;
+    }
+    @media (max-width: 1240px) {
+      max-width: 50%;
+      height: auto;
+      max-height: 100%;
+    }
+    @media (max-width: 575.9px) {
+      max-width: 80%;
+    }
+  }
 }
-.parthners {
-  height: 89%;
-  z-index: 1;
-  @media (max-width: 1440px) {
-    max-width: 42%;
-    height: auto;
-    max-height: 100%;
-  }
-  @media (max-width: 1240px) {
-    max-width: 50%;
-    height: auto;
-    max-height: 100%;
-  }
+
+.min_vh_100 {
+  min-height: 100vh;
   @media (max-width: 575.9px) {
-    max-width: 320px;
+    min-height: 90vh;
   }
 }
-.bf_bg_logo {
-  // height: 100% !important;
-  max-width: 30%;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  z-index: 0;
-  @media (max-width: 1440px) {
-    max-width: 35%;
-    top: auto;
-    bottom: 0 !important;
-  }
-  @media (max-width: 1240px) {
-    max-width: 38%;
-    height: auto;
-    bottom: 0 !important;
-  }
-  @media (max-width: 1140px) {
-    max-width: 40%;
-    height: auto;
-    top: auto;
-    bottom: 0 !important;
-  }
-  @media (max-width: 575.9px) {
-    max-width: 500px;
-    width: 250px;
-    height: auto;
-    bottom: 0 !important;
-  }
-}
+
 .showNav {
   opacity: 100% !important;
   z-index: 100 !important;
