@@ -175,7 +175,9 @@ main {
     transform: translate(0) !important;
   }
 }
-
+.cursor_pointer {
+  cursor: pointer;
+}
 // Advise Client section
 .custom_container {
   @media (min-width: 1240px) {
@@ -198,7 +200,7 @@ main {
   }
   .estate_building {
     @media (max-width: 575.9px) {
-      max-width: 345px;
+      max-width: 300px;
     }
     img {
       object-position: bottom;
@@ -246,7 +248,7 @@ main {
   }
   .construction_deals {
     margin-top: 70px;
-     @media (max-width: 767.9px) {
+    @media (max-width: 767.9px) {
       margin-top: 0px;
     }
     div {
@@ -256,6 +258,18 @@ main {
       max-width: 350px;
     }
   }
+}
+.we_deal_with {
+  padding-left: 40px;
+}
+:after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 1px;
+  background-color: #fe6a5b;
+  left: 0;
+  top: 50%;
 }
 @media (max-width: 767.9px) {
   .nav_mobile_scroll {
