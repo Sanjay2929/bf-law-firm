@@ -79,9 +79,36 @@ main {
         }
       }
     }
+    .news_link {
+      opacity: 1 !important;
+    }
+    .home_link a {
+      opacity: 1 !important;
+    }
+    #news:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background-color: #fe6a5b;
+      left: -40px;
+      top: 50%;
+      transition: all 0.3s ease-in-out;
+    }
+    .home_link:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background-color: #fe6a5b;
+      left: -40px;
+      top: 50%;
+      transition: all 0.3s ease-in-out;
+    }
+
     .hero_section {
       min-height: 772px;
-      max-height: 1000px;
+      max-height: 770px;
       height: 100vh;
       border-left: 1px solid #262626;
       .news_hero_section {
@@ -123,7 +150,7 @@ main {
       }
       h2 {
         line-height: 80%;
-        margin-bottom: 200px;
+        margin-bottom: 96px;
         letter-spacing: -0.05em;
         @media (max-width: 575.9px) {
           line-height: 100%;
@@ -140,15 +167,17 @@ main {
     }
   }
   .parthners {
-    height: 85%;
+    height: 82%;
     z-index: 1;
+    @media (max-width: 1440px) {
+      max-width: 43%;
+      height: auto;
+      max-height: 100%;
+    }
     @media (max-width: 1240px) {
       max-width: 50%;
       height: auto;
       max-height: 100%;
-    }
-    @media (max-width: 767.9px) {
-      max-width: 60%;
     }
     @media (max-width: 575.9px) {
       max-width: 320px;
@@ -156,18 +185,29 @@ main {
   }
   .bf_bg_logo {
     height: 100%;
+    top: 0;
     z-index: 0;
+    @media (max-width: 1440px) {
+      max-width: 35%;
+      top: auto;
+      height: 100%;
+      bottom: 0 !important;
+    }
     @media (max-width: 1240px) {
+      max-width: 38%;
+      height: auto;
+      bottom: 0 !important;
+    }
+    @media (max-width: 1140px) {
       max-width: 40%;
       height: auto;
-      top: 0 !important;
-      bottom: auto !important;
+      top: auto;
+      bottom: 0 !important;
     }
     @media (max-width: 575.9px) {
       max-width: 500px;
       width: 250px;
       height: auto;
-      top: auto !important;
       bottom: 0 !important;
     }
   }
