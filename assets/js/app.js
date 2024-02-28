@@ -1,13 +1,19 @@
-
 $(".news_slider").slick({
   infinite: true,
   slidesToShow: 3.2,
   centerMode: true,
-  centerPadding: "75px",
+  centerPadding: "110px",
   slidesToScroll: 1,
   prevArrow: $(".slick-prev"),
   nextArrow: $(".slick-next"),
   responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 2.3,
+        centerPadding: "200px",
+      },
+    },
     {
       breakpoint: 1200,
       settings: {
