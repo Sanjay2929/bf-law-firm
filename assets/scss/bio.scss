@@ -1,73 +1,85 @@
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    text-decoration: none !important;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none !important;
 }
 
 .color_red {
-    color: #fe6a5b;
+  color: #fe6a5b;
 }
 
 .font-opacity {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .transition_03s {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover rect {
-    fill: #6c6969;
+  fill: #6c6969;
 }
 
 $color_1: #6c6969;
 
 .back_to_top_header {
-    &:hover {
-        color: $color_1 !important;
-    }
+  &:hover {
+    color: $color_1 !important;
+  }
 }
 
 .letter-01 {
-    letter-spacing: 0.01em !important;
+  letter-spacing: 0.01em !important;
 }
 
 .text_normal {
-    line-height: 100% !important;
+  line-height: 100% !important;
 }
 
-@media (min-width:1024px) {
-    .position_fixed {
-        position: fixed;
-    }
+@media (min-width: 1024px) {
+  .position_fixed {
+    position: fixed;
+  }
 }
 
 @media (min-width: 1200px) {
-    .header_logo {
-        width: 180px;
-    }
-        .max_pra_content_one {
-            max-width: 576px;
-        }
-    
-        .max_pra_content_Two {
-            max-width: 572px;
-        }
+  .header_logo {
+    width: 180px;
+  }
+  .max_pra_content_one {
+    max-width: 576px;
+  }
+
+  .max_pra_content_Two {
+    max-width: 572px;
+  }
 }
-.main-container{
-        max-width: 1440px;
+@media (max-width: 991.98px) {
+  .news_para_max_height {
+    max-height: 394px !important;
+    height: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .news_para_max_height {
+    max-height: 100% !important;
+    height: 100%;
+  }
+}
+.main-container {
+  max-width: 1440px;
 }
 .text-justify {
-    text-align: justify !important;
+  text-align: justify !important;
 }
-.font_uppercase{
-    text-transform: uppercase !important ;
+.font_uppercase {
+  text-transform: uppercase !important ;
 }
-.letter-03{
-    letter-spacing: 0.3em !important;
+.letter-03 {
+  letter-spacing: 0.3em !important;
 }
-.line-height-h2{
-    line-height: 100% !important;
+.line-height-h2 {
+  line-height: 100% !important;
 }
