@@ -157,8 +157,16 @@ main {
         }
       }
       .scroll_down {
-        bottom: 24px;
+        bottom: 0;
         left: 16px;
+        animation: scroll_down 2s ease infinite alternate;
+        img {
+          transition: 0.3s ease all;
+          border-radius: 30px;
+        }
+        :hover {
+          box-shadow: 0px 0px 10px 0px white;
+        }
         @media (max-width: 767.9px) {
           max-width: 40px;
           left: 0;
@@ -166,11 +174,19 @@ main {
       }
     }
   }
+  @keyframes scroll_down {
+    0% {
+      bottom: 0;
+    }
+    100% {
+      bottom: 20px;
+    }
+  }
   .parthners {
-    height: 82%;
+    height: 89%;
     z-index: 1;
     @media (max-width: 1440px) {
-      max-width: 43%;
+      max-width: 42%;
       height: auto;
       max-height: 100%;
     }
@@ -184,7 +200,9 @@ main {
     }
   }
   .bf_bg_logo {
-    height: 100%;
+    // height: 100% !important;
+    max-width: 30%;
+    width: 100%;
     top: 0;
     z-index: 0;
     @media (max-width: 1440px) {
@@ -210,6 +228,53 @@ main {
       height: auto;
       bottom: 0 !important;
     }
+  }
+}
+.parthners {
+  height: 89%;
+  z-index: 1;
+  @media (max-width: 1440px) {
+    max-width: 42%;
+    height: auto;
+    max-height: 100%;
+  }
+  @media (max-width: 1240px) {
+    max-width: 50%;
+    height: auto;
+    max-height: 100%;
+  }
+  @media (max-width: 575.9px) {
+    max-width: 320px;
+  }
+}
+.bf_bg_logo {
+  // height: 100% !important;
+  max-width: 30%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  @media (max-width: 1440px) {
+    max-width: 35%;
+    top: auto;
+    bottom: 0 !important;
+  }
+  @media (max-width: 1240px) {
+    max-width: 38%;
+    height: auto;
+    bottom: 0 !important;
+  }
+  @media (max-width: 1140px) {
+    max-width: 40%;
+    height: auto;
+    top: auto;
+    bottom: 0 !important;
+  }
+  @media (max-width: 575.9px) {
+    max-width: 500px;
+    width: 250px;
+    height: auto;
+    bottom: 0 !important;
   }
 }
 .showNav {
@@ -272,9 +337,6 @@ main {
   }
   .corporate_deals {
     max-width: 600px;
-    p {
-      max-width: 350px;
-    }
   }
 }
 // Construction
@@ -299,9 +361,6 @@ main {
     div {
       max-width: 450px;
     }
-    p {
-      max-width: 350px;
-    }
   }
 }
 .we_deal_with {
@@ -318,6 +377,6 @@ main {
 }
 @media (max-width: 767.9px) {
   .nav_mobile_scroll {
-    overflow: hidden;
+    overflow: hidden !important;
   }
 }
