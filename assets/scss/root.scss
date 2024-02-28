@@ -3,7 +3,6 @@
 body,
 html {
   font-family: "Roboto", sans-serif !important;
-  overflow-x: hidden;
 }
 
 $color_1: var(--bittersweet);
@@ -109,7 +108,7 @@ $background-color_2: var(--bittersweet);
     --fs-md: 18px;
     --fs-lg: 20px;
     --fs-xl: 28px;
-    --fs-2xl: 32px;
+    --fs-2xl: 25px;
     --fs-5xl: 48px;
     --fs-8xl: 80px;
   }

@@ -5,6 +5,7 @@
   text-decoration: none !important;
   box-sizing: border-box;
 }
+
 main {
   div {
     max-width: 1460px;
@@ -79,6 +80,7 @@ main {
         }
       }
     }
+
     .news_link {
       opacity: 1 !important;
     }
@@ -378,5 +380,8 @@ main {
 @media (max-width: 767.9px) {
   .nav_mobile_scroll {
     overflow: hidden !important;
+  }
+  .litigation_para {
+    max-width: 350px;
   }
 }

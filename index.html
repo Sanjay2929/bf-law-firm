@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -86,11 +86,11 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body style="overflow-x: hidden">
     <!-- hero section  -->
     <main class="bg-black position-relative overflow-hidden">
       <div
-        class="px-3 mx-auto d-flex flex-md-row flex-column position-relative z-3 min-vh-100"
+        class="px-3 mx-auto d-flex flex-md-row flex-column position-relative z-3 min-vh-100 mb-5"
       >
         <div
           class="side_nav ps-lg-5 pe-lg-0 px-md-4 md:py-5 py-3 flex-md-column flex-row d-flex"
@@ -129,7 +129,7 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
           </ul>
         </div>
         <div
-          class="hero_section text-white d-flex flex-column justify-content-center position-relative ps-md-3 mb-5"
+          class="hero_section text-white d-flex flex-column justify-content-center position-relative ps-md-3"
         >
           <div data-aos="fade-up" data-aos-duration="1000">
             <h1 class="fs_sm fw-bold sm:pt-5 pt-4 text-uppercase mb-3">
@@ -387,7 +387,7 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <div class="p-md-5 m-4 p-2">
+          <div class="p-lg-5 py-md-5 py-lg-0 m-lg-4 p-2">
             <div class="ms-sm-4">
               <div class="d-flex align-items-center">
                 <div class="peach_hr"></div>
@@ -413,7 +413,7 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
               </p>
               <div class="gray_hr"></div>
               <p
-                class="opacity_07 fs_md fw-semibold lh_100 mb-3 letter_0-3 text-white"
+                class="opacity_07 litigation_para fs_md fw-semibold lh_100 mb-3 letter_0-3 text-white"
               >
                 Business, Commercial, and Contractual Disputes
               </p>
@@ -700,14 +700,16 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
     <!-- Milad section  -->
     <div class="bg-black border_one_side_top mt_150">
       <div class="milad_section mx-auto max_w_1440">
-        <div class="d-flex flex-lg-row flex-column">
+        <div class="d-flex flex-lg-row flex-column justify-content-between">
           <div data-aos="fade-down" data-aos-duration="1000">
             <div class="milad_parent_margin me-auto">
-              <img
-                src="./assets/images/icons/inverted_coma.svg"
-                alt="inverted comma"
-                class="inverted_comma"
-              />
+              <div class="me-auto">
+                <img
+                  src="./assets/images/icons/inverted_coma.svg"
+                  alt="inverted comma"
+                  class="inverted_comma"
+                />
+              </div>
               <p
                 class="milad_para pt-5 mt-sm-5 mt-lg-0 mt-xl-5 text-white fs_2xl fw-bold m-0 letter_0-3 lh_100"
               >
@@ -838,7 +840,7 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
             </div>
           </div>
           <div data-aos="fade-down" data-aos-duration="1000">
-            <div class="ms-auto">
+            <div class="ms-auto text-end">
               <img
                 src="./assets/images/milad/founder_man.png"
                 alt="founder man image"
@@ -1048,7 +1050,7 @@ https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
             </div>
           </div>
           <div class="col-md-6">
-            <form onsubmit="handleSubmit(event)" class="pt-md-0 pt-5">
+            <form onsubmit="handleSubmit(event)" class="pt-md-0 pt-5 form_max_width">
               <div class="w-100">
                 <input
                   type="text"
