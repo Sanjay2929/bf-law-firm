@@ -18,15 +18,16 @@
     transition: all 0.3s ease-in-out;
 }
 
-a:hover rect {
-    fill: #6c6969;
+a {
+    &:hover {
+        rect {
+            fill: #6c6969;
+        }
+    }
 }
-
-$color_1: #6c6969;
-
 .back_to_top_header {
     &:hover {
-        color: $color_1 !important;
+        color: #6c6969 !important;
     }
 }
 
@@ -70,4 +71,7 @@ $color_1: #6c6969;
 }
 .line-height-h2{
     line-height: 100% !important;
+}
+.letter-0-3 {
+    letter-spacing: -0.03em !important;
 }
