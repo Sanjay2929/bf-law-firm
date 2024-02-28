@@ -8,10 +8,10 @@ $(".news_slider").slick({
   nextArrow: $(".slick-next"),
   responsive: [
     {
-      breakpoint: 1600,
+      breakpoint: 1535,
       settings: {
-        slidesToShow: 2.3,
-        centerPadding: "200px",
+        slidesToShow: 3.2,
+        centerPadding: "80px",
       },
     },
     {
@@ -25,7 +25,7 @@ $(".news_slider").slick({
       breakpoint: 992,
       settings: {
         slidesToShow: 2.1,
-        centerPadding: "40px",
+        centerPadding: "30px",
       },
     },
     {
@@ -40,7 +40,7 @@ $(".news_slider").slick({
     {
       breakpoint: 576,
       settings: {
-        slidesToShow: 1.1,
+        slidesToShow: 1.01,
         centerPadding: "40px",
         autoplay: true,
         autoplaySpeed: 2000,
