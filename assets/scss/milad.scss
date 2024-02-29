@@ -185,7 +185,7 @@ input::-webkit-inner-spin-button {
   width: 180px;
 }
 .footer_gray_hr {
-  opacity: 0.45;
+  opacity: 0.85;
 }
 .social_icons_margin {
   margin-left: 200px;
@@ -213,6 +213,9 @@ footer a:hover svg path {
 @media (min-width: 1600px) {
   .form_spacing_1920 {
     padding: 60px 0;
+  }
+  .footer_gray_hr {
+    opacity: 0.55;
   }
 }
 @media (max-width: 1299.98px) {
