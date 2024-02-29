@@ -101,7 +101,7 @@
   height: 1050px;
 }
 .litigation_section_margin {
-  margin-top: 90px !important;
+  margin-top: 150px !important;
 }
 .peach_hr {
   width: 27px;
@@ -138,9 +138,10 @@ input::-webkit-inner-spin-button {
 .contact_form {
   display: block;
   width: 100% !important;
-  padding: 10px !important;
+  padding: 11px 10px !important;
   border: 1px solid #fff !important;
   border-radius: 8px !important;
+  font-size: var(--fs-sm);
   background-color: transparent !important;
   color: #fff !important;
   font-weight: 600;
@@ -162,6 +163,9 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
+.custom_padding_anything_container {
+  padding: 0 12px;
+}
 .contact_form_btn:hover {
   color: #fe6a5b !important;
   background: #000000 !important;
@@ -169,6 +173,9 @@ input::-webkit-inner-spin-button {
 }
 .anything_link_text_hover:hover {
   color: #e84a5f !important;
+}
+.anything_link_text_hover {
+  line-height: 1.6;
 }
 .anything_heading {
   max-width: 310px;
@@ -178,7 +185,7 @@ input::-webkit-inner-spin-button {
   width: 180px;
 }
 .footer_gray_hr {
-  opacity: 0.25;
+  opacity: 0.45;
 }
 .social_icons_margin {
   margin-left: 200px;
@@ -188,10 +195,10 @@ footer a:hover svg path {
   fill: #4f4f4f;
 }
 .image_col {
-  width: 25% !important;
+  width: 24% !important;
 }
 .footer_link_col {
-  width: 75% !important;
+  width: 76% !important;
 }
 .pointer_event_none {
   pointer-events: none;
@@ -202,6 +209,11 @@ footer a:hover svg path {
 }
 .footer_links_hover:hover {
   color: #fe6a5b !important;
+}
+@media (min-width: 1600px) {
+  .form_spacing_1920 {
+    padding: 60px 0;
+  }
 }
 @media (max-width: 1299.98px) {
   .milad_parent_margin {
