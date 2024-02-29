@@ -5,6 +5,7 @@
   text-decoration: none !important;
   box-sizing: border-box;
 }
+
 main {
   div {
     max-width: 1460px;
@@ -79,6 +80,7 @@ main {
         }
       }
     }
+
     .news_link {
       opacity: 1 !important;
     }
@@ -156,7 +158,106 @@ main {
           line-height: 100%;
         }
       }
+<<<<<<< HEAD
     }
+  }
+  .scroll_down {
+    bottom: 5%;
+    left: 16px;
+    @media (max-width: 767.98px) {
+      max-width: 40px;
+      bottom: -20%;
+    }
+    @media (max-width: 576.98px) {
+      max-width: 40px;
+      left: 0% !important;
+      top: 50%;
+=======
+      .scroll_down {
+        bottom: 0;
+        left: 16px;
+        animation: scroll_down 2s ease infinite alternate;
+        img {
+          transition: 0.3s ease all;
+          border-radius: 30px;
+        }
+        :hover {
+          box-shadow: 0px 0px 10px 0px white;
+        }
+        @media (max-width: 767.9px) {
+          max-width: 40px;
+          left: 0;
+        }
+      }
+>>>>>>> e0cc1f064a37f514c5d6d7e2b27d77bbf5c83f21
+    }
+  }
+  @keyframes scroll_down {
+    0% {
+      bottom: 0;
+    }
+    100% {
+      bottom: 20px;
+    }
+  }
+  .parthners {
+<<<<<<< HEAD
+    height: 100%;
+=======
+    height: 89%;
+>>>>>>> e0cc1f064a37f514c5d6d7e2b27d77bbf5c83f21
+    z-index: 1;
+    @media (max-width: 1440px) {
+      max-width: 42%;
+      height: auto;
+      max-height: 100%;
+    }
+    @media (max-width: 1240px) {
+      max-width: 50%;
+      height: auto;
+      max-height: 100%;
+    }
+    @media (max-width: 575.9px) {
+      max-width: 80%;
+    }
+  }
+<<<<<<< HEAD
+}
+.min_vh_100 {
+  min-height: 100vh;
+  @media (max-width: 575.9px) {
+    min-height: 90vh;
+=======
+  .bf_bg_logo {
+    // height: 100% !important;
+    max-width: 30%;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+    @media (max-width: 1440px) {
+      max-width: 35%;
+      top: auto;
+      height: 100%;
+      bottom: 0 !important;
+    }
+    @media (max-width: 1240px) {
+      max-width: 38%;
+      height: auto;
+      bottom: 0 !important;
+    }
+    @media (max-width: 1140px) {
+      max-width: 40%;
+      height: auto;
+      top: auto;
+      bottom: 0 !important;
+    }
+    @media (max-width: 575.9px) {
+      max-width: 500px;
+      width: 250px;
+      height: auto;
+      bottom: 0 !important;
+    }
+>>>>>>> e0cc1f064a37f514c5d6d7e2b27d77bbf5c83f21
   }
   .scroll_down {
     bottom: 5%;
@@ -189,12 +290,14 @@ main {
     }
   }
 }
+
 .min_vh_100 {
   min-height: 100vh;
   @media (max-width: 575.9px) {
     min-height: 90vh;
   }
 }
+
 .showNav {
   opacity: 100% !important;
   z-index: 100 !important;
@@ -255,9 +358,6 @@ main {
   }
   .corporate_deals {
     max-width: 600px;
-    p {
-      max-width: 350px;
-    }
   }
 }
 // Construction
@@ -282,9 +382,6 @@ main {
     div {
       max-width: 450px;
     }
-    p {
-      max-width: 350px;
-    }
   }
 }
 .we_deal_with {
@@ -301,6 +398,9 @@ main {
 }
 @media (max-width: 767.9px) {
   .nav_mobile_scroll {
-    overflow: hidden;
+    overflow: hidden !important;
+  }
+  .litigation_para {
+    max-width: 350px;
   }
 }
