@@ -368,6 +368,7 @@ main {
   left: 0;
   top: 50%;
 }
+
 @media (max-width: 767.9px) {
   .nav_mobile_scroll {
     overflow: hidden !important;
@@ -375,4 +376,18 @@ main {
   .litigation_para {
     max-width: 350px;
   }
+}
+//  SCROLL BAR MODIFIED
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fe6a5b;
+  border-radius: 25px;
 }
