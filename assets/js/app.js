@@ -8,7 +8,7 @@ $(".news_slider").slick({
   nextArrow: $(".slick-next"),
   responsive: [
     {
-      breakpoint: 1535,
+      breakpoint: 1537,
       settings: {
         slidesToShow: 3.2,
         centerPadding: "80px",
@@ -41,7 +41,7 @@ $(".news_slider").slick({
       breakpoint: 576,
       settings: {
         slidesToShow: 1.01,
-        centerPadding: "40px",
+        centerPadding: "60px",
         autoplay: true,
         autoplaySpeed: 2000,
       },
