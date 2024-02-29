@@ -1,989 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
-    <title>BF Firm Law</title>
-    <meta name="title" content="BF Firm Law" />
-    <meta name="description" content="REAL ESTATE. BUSINESS. CONSTRUCTION." />
-    <!-- ========================== LINK FAVICON ======================== -->
-    <link
-      rel="shortcut icon"
-      href="/assets/android-chrome-192x192.png"
-      type="image/x-icon"
-    />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-16x16.png" />
-    <link rel="icon" href="/assets/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="/assets/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon-16x16.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="256x256"
-      href="/assets/android-chrome-256x256.png"
-    />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bf-law-firm-sigma.vercel.app" />
-    <meta property="og:title" content="BF Firm Law" />
-    <meta
-      property="og:description"
-      content="REAL ESTATE. BUSINESS. CONSTRUCTION."
-    />
-    <meta
-      property="og:image"
-      content="https://bf-law-firm-sigma.vercel.app/assets/seo_img.webp"
-    />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://bf-law-firm-sigma.vercel.app"
-    />
-    <meta property="twitter:title" content="BF Firm Law" />
-    <meta
-      property="twitter:description"
-      content="REAL ESTATE. BUSINESS. CONSTRUCTION."
-    />
-    <meta
-      property="twitter:image"
-      content="https://bf-law-firm-sigma.vercel.app/assets/seo_img.webp"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary Meta Tags -->
+  <title>BF Firm Law</title>
+  <meta name="title" content="BF Firm Law" />
+  <meta name="description" content="REAL ESTATE. BUSINESS. CONSTRUCTION." />
+  <!-- ========================== LINK FAVICON ======================== -->
+  <link rel="shortcut icon" href="/assets/android-chrome-192x192.png" type="image/x-icon" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon-16x16.png" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="192x192" href="/assets/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="256x256" href="/assets/android-chrome-256x256.png" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bf-law-firm-sigma.vercel.app" />
+  <meta property="og:title" content="BF Firm Law" />
+  <meta property="og:description" content="REAL ESTATE. BUSINESS. CONSTRUCTION." />
+  <meta property="og:image" content="https://bf-law-firm-sigma.vercel.app/assets/seo_img.webp" />
 
-    <!-- Bootstrap link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!-- slider link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
-      rel="stylesheet"
-    />
-    <!-- custum css links  -->
-    <link rel="stylesheet" href="./assets/scss/milad.css" />
-    <link rel="stylesheet" href="./assets/scss/root.css" />
-    <link rel="stylesheet" href="./assets/scss/style.css" />
-    <link rel="stylesheet" href="/assets/scss/slider.css" />
-    <link rel="stylesheet" href="./assets/scss/new.css" />
-    <!-- AOS  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://bf-law-firm-sigma.vercel.app" />
+  <meta property="twitter:title" content="BF Firm Law" />
+  <meta property="twitter:description" content="REAL ESTATE. BUSINESS. CONSTRUCTION." />
+  <meta property="twitter:image" content="https://bf-law-firm-sigma.vercel.app/assets/seo_img.webp" />
 
-  <body>
-    <!-- hero section  -->
-    <main class="bg-black position-relative overflow-hidden">
-      <div
-        class="ps-sm-3 px-3 pe-sm-0 mx-auto d-flex flex-md-row flex-column position-relative z-3"
-      >
-        <div
-          class="side_nav news_side_nav ps-lg-5 pe-lg-0 px-md-4 py-xl-3 py-lg-0 py-3 flex-md-column flex-row d-flex"
-        >
-          <div class="d-md-none menu_icon d-flex pe-3">
-            <img
-              onclick="showNav()"
-              class="mobile-nav-icon cursor_pointer"
-              id="navToggleIcon"
-              src="/assets/images/icons/nav-toggle.svg"
-              alt="toggle"
-            />
-          </div>
-          <a href="#"><img src="/assets/images/icons/logo.svg" alt="logo" /></a>
-          <ul
-            id="navBar"
-            class="d-flex mt-5 md:ms-2 flex-column ps-0 navbar_links"
-          >
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="#">Practice Areas</a>
-            </li>
-            <li id="news">
-              <a href="#" class="news_link">News</a>
-            </li>
-            <li>
-              <a href="#">Team</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
+  <!-- Bootstrap link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- slider link  -->
+  <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet" />
+  <!-- custum css links  -->
+  <link rel="stylesheet" href="./assets/scss/milad.css" />
+  <link rel="stylesheet" href="./assets/scss/root.css" />
+  <link rel="stylesheet" href="./assets/scss/style.css" />
+  <link rel="stylesheet" href="/assets/scss/slider.css" />
+  <link rel="stylesheet" href="./assets/scss/new.css" />
+  <!-- AOS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- hero section  -->
+  <main class="bg-black position-relative overflow-hidden news_header">
+    <div class="ps-sm-3 px-3 pe-sm-0 mx-auto d-flex flex-md-row flex-column position-relative z-3">
+      <div class="side_nav news_side_nav ps-lg-5 pe-lg-0 px-md-4 py-xl-3 py-lg-0 py-3 flex-md-column flex-row d-flex">
+        <div class="d-md-none menu_icon d-flex pe-3">
+          <img onclick="showNav()" class="mobile-nav-icon cursor_pointer" id="navToggleIcon"
+            src="/assets/images/icons/nav-toggle.svg" alt="toggle" />
         </div>
-        <div
-          class="news_hero_section text-white d-flex flex-column justify-content-center position-relative ps-md-3"
-        >
-          <div data-aos="fade-up" data-aos-duration="1000">
-            <a
-              class="color-peach d-flex align-items-center back_to_top_header position-relative z-3"
-              href="index.html"
-            >
-              <svg
-                width="51"
-                height="12"
-                viewBox="0 0 51 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  class="transition_03"
-                  d="M8.87057 4.5H50.9999V7.5H8.87057V12L-5.34058e-05 6L8.87057 0V4.5Z"
-                  fill="#FE6A5B"
-                ></path>
-              </svg>
-              <h5
-                class="letter_0_3 text-uppercase transition_03 ms-2 mb-0 fs_sm fw-bold lh_100 color_bittersweet"
-              >
-                Back to Home
-              </h5>
+        <a href="#"><img src="/assets/images/icons/logo.svg" alt="logo" /></a>
+        <ul id="navBar" class="d-flex mt-5 md:ms-2 flex-column ps-0 navbar_links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Practice Areas</a>
+          </li>
+          <li id="news">
+            <a href="#" class="news_link">News</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="news_hero_section text-white d-flex flex-column justify-content-center position-relative ps-md-3">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <a class="color-peach d-flex align-items-center back_to_top_header position-relative z-3" href="index.html">
+            <svg width="51" height="12" viewBox="0 0 51 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="transition_03" d="M8.87057 4.5H50.9999V7.5H8.87057V12L-5.34058e-05 6L8.87057 0V4.5Z"
+                fill="#FE6A5B"></path>
+            </svg>
+            <h5 class="letter_0_3 text-uppercase transition_03 ms-2 mb-0 fs_sm fw-bold lh_100 color_bittersweet">
+              Back to Home
+            </h5>
+          </a>
+          <h1 class="letter_0-5 text-uppercase text-white fs_8xl fw-bolder lh_100 pt-sm-0 pt-2">
+            News
+          </h1>
+          <p class="text-white mt-3 opacity_07 fs_sm fw-semibold lh_100">
+            Developments, trends and opinions that move us in<br />
+            Boddoohi &amp; Friedlander LLP, but also beyond.
+          </p>
+        </div>
+      </div>
+      <div class="ms-sm-auto animation-element bounce-down in-view">
+        <img src="./assets/images/news/news_bg.svg" class="news_hero_image_desktop subject" />
+        <img src="./assets/images/news/news_bg_mobile_screen.svg" class="news_hero_image_mobile subject w-100" />
+      </div>
+    </div>
+  </main>
+  <!-- CARDS  -->
+  <div class="bg-black">
+    <div class="bg-white cards_border_radius_one_side">
+      <div class="cards_container">
+        <div class="cards_margin_padding row">
+          <!-- card 1  -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/suprme_court.webp" class="news-img w-100" alt="supreme court image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Another big win in Kings County, Supreme Court
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                    target="_blank" rel="noopener noreferrer" class="text-black opacity_07">
+                    We obtained outright dismissal of a claim brought
+                    involving two separate real estate transactions, and
+                    claims under the New York Debtor and Creditor Law (i.e.,
+                    plaintiff claimed the two sales were fraudulent
+                    conveyances designed to avoid the payment of a judgment).
+                    The Commercial Division in Brooklyn agreed with us, and
+                    our fantastic innocent-by-stander client, and dismissed
+                    the case outright (and denied the plaintiff leave to
+                    amend), ruling (correctly) that there was absolutely
+                    nothing wrong with the transfers, in a well-reasoned, and
+                    interesting decision. (access it
+                  </a>
+                  <a class="color_bittersweet text-decoration-underline"
+                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link  "
+                    target="_blank" rel="noopener noreferrer">here</a>).
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/big_win.webp" class="news-img w-100" alt="big win image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Big win in the SDNY
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                    target="_blank" rel="noopener noreferrer" class="text-black opacity_07">
+                    We obtained a massive win in Federal Court, in the
+                    Southern District of New York, on behalf of our wonderful
+                    client, an international travel company. In this internet
+                    unfair competition/non-disparagement action, we obtained
+                    outright dismissal of the complaint in a decision issued
+                    by the Hon. Valerie E. Caproni. The decision was also
+                    written up in the New York Law Journal (access it</a>
+                  <a class="color_bittersweet text-decoration-underline"
+                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link  "
+                    target="_blank" rel="noopener noreferrer">here</a>).
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/huge_victory.webp" class="news-img w-100" alt="huge victory image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Huge victory in the Appellate Division, First Department
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 opacity_07 text-black fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  This was a big victory our client, a wonderful New York
+                  cooperative corporation located in Queens, New York. On
+                  appeal, a panel of judges in Manhattan agreed with us and
+                  reversed the decision of the trial court to dismiss our
+                  client’s case, leading to the case being reinstated, and
+                  paving the way for a favorable resolution. In other words, a
+                  complete 360. The case involved a little known and often
+                  overlooked federal statute known as the Cooperative and
+                  Condominium Abuse Relief Act, that serves as a powerful tool
+                  for cooperatives and condominiums.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/big_win.webp" class="news-img w-100" alt="big win image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Another big win in the SDNY
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 opacity_07 text-black fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  This was round two in a battle between our client, a
+                  wonderful, well-known, and respected international travel
+                  company, and another travel company over purported claims of
+                  unfair competition under New York and California law. We
+                  obtained dismissal of the case once in August 2022, but the
+                  plaintiff was allowed to amend some of its claims. This
+                  time, Judge Valerie Caproni granted our motion and dismissed
+                  the amended complaint, with prejudice, and later awarded us
+                  costs and attorneys’ fees.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/esopus.webp" class="news-img w-100" alt="esopus image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Esopus Updates Proposed Marina Camping Rules
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  Milad Boddoohi Quoted in the Daily Freeman Concerning The
+                  Town of Esopus’ Passage of Zoning Regulations Governing
+                  Marinas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/esopus_seeks.webp" class="news-img w-100" alt="esopus seeks image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Esopus Seeks to Revise Zoning for Marina RV Lodging
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  Milad Boddoohi quoted in the Daily Freeman concerning Town
+                  of Esopus vs. Castaways Marina
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/esopus_seeks.webp" class="news-img w-100" alt="esopus seeks image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Esopus Town Board Schedules Public Hearing On Proposed Law
+                    Allowing Camping At Marinas Along Rondout Creek
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  Milad Boddoohi quoted in the Daily Freeman concerning
+                  proposed law revising Town of Esopus’ zoning regulations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/boddoohi.webp" class="news-img w-100" alt="boddoohi image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Boddoohi & Friedlander: New Law Alert:
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  On December 22, 2021, the New York State Legislature passed
+                  (and Governing Hochul signed into law) a law exempting
+                  cooperatives from several provisions of the HSTPA
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 9 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/milad_boddoohi.webp" class="news-img w-100" alt="milad boddoohi image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Milad Boddoohi in the New York Law Journal: Googling Your
+                    Way To Victory
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  A closer look at an underutilized tool rooted in the CPLR
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 10 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/milad_boddoohi_mam.webp" class="news-img w-100"
+                alt="milad boddoohi man image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Milad Boddoohi in the Mann Report concerning the
+                    Condominium and Cooperative Protection and Abuse Relief
+                    Act.
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  Many cooperatives and condominiums have, for decades,
+                  overlooked potent statutory rights, enabling them to
+                  recapture building amenities currently under long-term,
+                  unfavorable leases with their developers
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 11 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/new_york.webp" class="news-img w-100" alt="new york image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Milad Boddoohi in the New York Law Journal: Not Out of
+                    Time, Not Out of Luck
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  An unsettled aspect of the Condominium and Cooperative
+                  Protection and Abuse Act may offer new hope.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card 12 -->
+          <div class="col-12 col-sm-6 col-lg-4 new_data_card">
+            <div class="data">
+              <img src="./assets/images/news/new_york.webp" class="news-img w-100" alt="new york image" />
+              <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                target="_blank" rel="noopener noreferrer">
+              </a>
+              <div class="cards_box p-4">
+                <a href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
+                  target="_blank" rel="noopener noreferrer">
+                  <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
+                    Milad Boddoohi in the New York Law Journal: When a Sex
+                    Offender Moves In
+                  </h3>
+                </a>
+                <p class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3">
+                  What, if anything, is the obligation of a board of a
+                  condominium or cooperative when a convicted sex offender
+                  moves in?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- anything section  -->
+  <div class="bg-black anything_section position-relative">
+    <div class="anything_container mx-auto py-5 px-lg-0 px-4">
+      <div class="row py-4 my-3 align-items-center">
+        <div class="col-md-6">
+          <div data-aos="fade-down" data-aos-duration="1000">
+            <h3 class="letter_0-3 text-white fw-bold lh_100 fs_2xl mb-0 anything_heading">
+              Anything you need, we are here.
+            </h3>
+            <p class="text-white anything_second_para opacity_07 fw-normal lh_100 fs_sm mt-4">
+              Please reach out to us via phone, email, text, or the form here
+              if you have any questions for us.
+            </p>
+            <div class="my-3">
+              <p class="text-white fs_sm lh_100 fw-normal mb-3">
+                Boddoohi &amp; Friedlander LLP
+              </p>
+              <!-- <br /> -->
+              <a href="https://goo.gl/maps/MhVbDPtmKzWAweFJ6" target="_blank" rel="noopener noreferrer"
+                class="text-white fs_sm fw-normal anything_link_text_hover transition_03">
+                <span class="d-block"> New York City Office:</span>
+                <span class="d-block"> 110 East 25th Street</span>
+                <span class="d-block"> New York, New York 10010</span>
+              </a>
+              <!-- <br /> -->
+              <a href="https://maps.app.goo.gl/YNKQEtyfB5RiSHks6" target="_blank" rel="noopener noreferrer"
+                class="text-white fs_sm fw-normal mt-3 d-block anything_link_text_hover transition_03">
+                <span class="d-block"> Hudson Valley Office:</span>
+                <span class="d-block"> 291 Wall Street, 4th Floor</span>
+                <span class="d-block"> Kingston, New York 12401</span>
+              </a>
+            </div>
+            <p class="text-white fs_sm fw-normal mb-0 fw-normal lh_160 anything_link_text_hover transition_03">
+              Call or Text Us:
+            </p>
+            <a href="tel:+(347) 252 9922">
+              <p class="text-white fs_sm fw-normal mb-0 fw-normal lh_160 anything_link_text_hover transition_03">
+                (347) 252 9922
+              </p>
             </a>
-            <h1
-              class="letter_0-5 text-uppercase text-white fs_8xl fw-bolder lh_100 pt-sm-0 pt-2"
-            >
-              News
-            </h1>
-            <p class="text-white mt-3 opacity_07 fs_sm fw-semibold lh_100">
-              Developments, trends and opinions that move us in<br />
-              Boddoohi &amp; Friedlander LLP, but also beyond.
+            <a href="mailto:hello@thebflawfirm.com">
+              <p class="text-white fw-normal lh_160 fs_sm mb-0 anything_link_text_hover transition_03">
+                hello@thebflawfirm.com
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form onsubmit="handleSubmit(event)" class="pt-md-0 pt-5 form_max_width">
+            <div class="w-100">
+              <input type="text" required="" class="contact_form" id="contact-form-name" placeholder="Your Name" />
+            </div>
+            <div class="mt-3 pt-1">
+              <input type="email" required="" class="contact_form" id="contact-form-email" placeholder="Email" />
+            </div>
+            <div class="mt-3 pt-1">
+              <input type="number" class="contact_form" required="" id="contact-form-number"
+                placeholder="Phone Number" />
+            </div>
+            <div class="mt-3 pt-1">
+              <textarea class="contact_form" required="" placeholder="How can we help?" id="contact-form-message"
+                rows="3"></textarea>
+            </div>
+            <div class="mt-3 pt-1">
+              <button type="submit" class="w-100 contact_form_btn" id="send-message-btn">
+                Submit message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section  -->
+  <footer class="bg-black">
+    <div class="row position-relative max_w_1440" data-aos="fade-down" data-aos-duration="1000">
+      <div class="image_col p-sm-0">
+        <img src="./assets/images/icons/footer-img.svg" alt="footer image"
+          class="d-sm-block d-none pointer_event_none" />
+      </div>
+      <div class="footer_link_col mt-sm-5 pb-sm-0 pb-5 padding_xl_footer_col">
+        <div class="mt-sm-5 pt-sm-5">
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <div>
+              <a href="#"><img class="footer_logo" src="./assets/images/icons/logo.svg" alt="logo" /></a>
+              <div class="social_icons_margin d-flex d-md-none justify-content-center mt-md-0 mt-4">
+                <a class="pe-3" href="https://www.facebook.com/thebflawfirm" target="_blank" rel="noopener noreferrer">
+                  <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                      fill="#FE6A5B"></path>
+                  </svg>
+                </a>
+
+                <a href="https://www.instagram.com/thebflawfirm/" target="_blank" rel="noopener noreferrer">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition_03s"
+                      d="M12 2.16094C15.2063 2.16094 15.5859 2.175 16.8469 2.23125C18.0188 2.28281 18.6516 2.47969 19.0734 2.64375C19.6313 2.85938 20.0344 3.12188 20.4516 3.53906C20.8734 3.96094 21.1313 4.35938 21.3469 4.91719C21.5109 5.33906 21.7078 5.97656 21.7594 7.14375C21.8156 8.40937 21.8297 8.78906 21.8297 11.9906C21.8297 15.1969 21.8156 15.5766 21.7594 16.8375C21.7078 18.0094 21.5109 18.6422 21.3469 19.0641C21.1313 19.6219 20.8687 20.025 20.4516 20.4422C20.0297 20.8641 19.6313 21.1219 19.0734 21.3375C18.6516 21.5016 18.0141 21.6984 16.8469 21.75C15.5813 21.8062 15.2016 21.8203 12 21.8203C8.79375 21.8203 8.41406 21.8062 7.15313 21.75C5.98125 21.6984 5.34844 21.5016 4.92656 21.3375C4.36875 21.1219 3.96563 20.8594 3.54844 20.4422C3.12656 20.0203 2.86875 19.6219 2.65313 19.0641C2.48906 18.6422 2.29219 18.0047 2.24063 16.8375C2.18438 15.5719 2.17031 15.1922 2.17031 11.9906C2.17031 8.78438 2.18438 8.40469 2.24063 7.14375C2.29219 5.97187 2.48906 5.33906 2.65313 4.91719C2.86875 4.35938 3.13125 3.95625 3.54844 3.53906C3.97031 3.11719 4.36875 2.85938 4.92656 2.64375C5.34844 2.47969 5.98594 2.28281 7.15313 2.23125C8.41406 2.175 8.79375 2.16094 12 2.16094ZM12 0C8.74219 0 8.33438 0.0140625 7.05469 0.0703125C5.77969 0.126563 4.90313 0.332812 4.14375 0.628125C3.35156 0.9375 2.68125 1.34531 2.01563 2.01562C1.34531 2.68125 0.9375 3.35156 0.628125 4.13906C0.332812 4.90313 0.126563 5.775 0.0703125 7.05C0.0140625 8.33437 0 8.74219 0 12C0 15.2578 0.0140625 15.6656 0.0703125 16.9453C0.126563 18.2203 0.332812 19.0969 0.628125 19.8563C0.9375 20.6484 1.34531 21.3188 2.01563 21.9844C2.68125 22.65 3.35156 23.0625 4.13906 23.3672C4.90313 23.6625 5.775 23.8687 7.05 23.925C8.32969 23.9812 8.7375 23.9953 11.9953 23.9953C15.2531 23.9953 15.6609 23.9812 16.9406 23.925C18.2156 23.8687 19.0922 23.6625 19.8516 23.3672C20.6391 23.0625 21.3094 22.65 21.975 21.9844C22.6406 21.3188 23.0531 20.6484 23.3578 19.8609C23.6531 19.0969 23.8594 18.225 23.9156 16.95C23.9719 15.6703 23.9859 15.2625 23.9859 12.0047C23.9859 8.74688 23.9719 8.33906 23.9156 7.05938C23.8594 5.78438 23.6531 4.90781 23.3578 4.14844C23.0625 3.35156 22.6547 2.68125 21.9844 2.01562C21.3188 1.35 20.6484 0.9375 19.8609 0.632812C19.0969 0.3375 18.225 0.13125 16.95 0.075C15.6656 0.0140625 15.2578 0 12 0Z"
+                      fill="#FE6A5B"></path>
+                    <path
+                      d="M12 5.83594C8.59688 5.83594 5.83594 8.59688 5.83594 12C5.83594 15.4031 8.59688 18.1641 12 18.1641C15.4031 18.1641 18.1641 15.4031 18.1641 12C18.1641 8.59688 15.4031 5.83594 12 5.83594ZM12 15.9984C9.79219 15.9984 8.00156 14.2078 8.00156 12C8.00156 9.79219 9.79219 8.00156 12 8.00156C14.2078 8.00156 15.9984 9.79219 15.9984 12C15.9984 14.2078 14.2078 15.9984 12 15.9984Z"
+                      fill="#FE6A5B"></path>
+                    <path
+                      d="M19.8469 5.59238C19.8469 6.38926 19.2 7.03145 18.4078 7.03145C17.6109 7.03145 16.9688 6.38457 16.9688 5.59238C16.9688 4.79551 17.6156 4.15332 18.4078 4.15332C19.2 4.15332 19.8469 4.8002 19.8469 5.59238Z"
+                      fill="#FE6A5B"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="footer_gray_hr bg-white w-100 my-4 mt-md-5" />
+          <div class="d-flex mt-2 item-center justify-content-center justify-content-md-start">
+            <div
+              class="d-flex flex-sm-row flex-column justify-content-center justify-content-sm-start align-items-center gap-sm-0 gap-2">
+              <a class="fs_sm fw-semibold text-white footer_links_hover transition_03" href="#">Back to Top</a>
+              <a href="#" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">Practice
+                Areas</a>
+              <a href="#" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">News</a>
+              <a href="#" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">Team</a>
+              <a href="#" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">Contact</a>
+            </div>
+            <div class="social_icons_margin d-md-flex d-none mt-sm-0 mt-4">
+              <a class="pe-3" href="https://www.facebook.com/thebflawfirm" target="_blank" rel="noopener noreferrer">
+                <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                    fill="#FE6A5B"></path>
+                </svg>
+              </a>
+
+              <a href="https://www.instagram.com/thebflawfirm/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="transition_03s"
+                    d="M12 2.16094C15.2063 2.16094 15.5859 2.175 16.8469 2.23125C18.0188 2.28281 18.6516 2.47969 19.0734 2.64375C19.6313 2.85938 20.0344 3.12188 20.4516 3.53906C20.8734 3.96094 21.1313 4.35938 21.3469 4.91719C21.5109 5.33906 21.7078 5.97656 21.7594 7.14375C21.8156 8.40937 21.8297 8.78906 21.8297 11.9906C21.8297 15.1969 21.8156 15.5766 21.7594 16.8375C21.7078 18.0094 21.5109 18.6422 21.3469 19.0641C21.1313 19.6219 20.8687 20.025 20.4516 20.4422C20.0297 20.8641 19.6313 21.1219 19.0734 21.3375C18.6516 21.5016 18.0141 21.6984 16.8469 21.75C15.5813 21.8062 15.2016 21.8203 12 21.8203C8.79375 21.8203 8.41406 21.8062 7.15313 21.75C5.98125 21.6984 5.34844 21.5016 4.92656 21.3375C4.36875 21.1219 3.96563 20.8594 3.54844 20.4422C3.12656 20.0203 2.86875 19.6219 2.65313 19.0641C2.48906 18.6422 2.29219 18.0047 2.24063 16.8375C2.18438 15.5719 2.17031 15.1922 2.17031 11.9906C2.17031 8.78438 2.18438 8.40469 2.24063 7.14375C2.29219 5.97187 2.48906 5.33906 2.65313 4.91719C2.86875 4.35938 3.13125 3.95625 3.54844 3.53906C3.97031 3.11719 4.36875 2.85938 4.92656 2.64375C5.34844 2.47969 5.98594 2.28281 7.15313 2.23125C8.41406 2.175 8.79375 2.16094 12 2.16094ZM12 0C8.74219 0 8.33438 0.0140625 7.05469 0.0703125C5.77969 0.126563 4.90313 0.332812 4.14375 0.628125C3.35156 0.9375 2.68125 1.34531 2.01563 2.01562C1.34531 2.68125 0.9375 3.35156 0.628125 4.13906C0.332812 4.90313 0.126563 5.775 0.0703125 7.05C0.0140625 8.33437 0 8.74219 0 12C0 15.2578 0.0140625 15.6656 0.0703125 16.9453C0.126563 18.2203 0.332812 19.0969 0.628125 19.8563C0.9375 20.6484 1.34531 21.3188 2.01563 21.9844C2.68125 22.65 3.35156 23.0625 4.13906 23.3672C4.90313 23.6625 5.775 23.8687 7.05 23.925C8.32969 23.9812 8.7375 23.9953 11.9953 23.9953C15.2531 23.9953 15.6609 23.9812 16.9406 23.925C18.2156 23.8687 19.0922 23.6625 19.8516 23.3672C20.6391 23.0625 21.3094 22.65 21.975 21.9844C22.6406 21.3188 23.0531 20.6484 23.3578 19.8609C23.6531 19.0969 23.8594 18.225 23.9156 16.95C23.9719 15.6703 23.9859 15.2625 23.9859 12.0047C23.9859 8.74688 23.9719 8.33906 23.9156 7.05938C23.8594 5.78438 23.6531 4.90781 23.3578 4.14844C23.0625 3.35156 22.6547 2.68125 21.9844 2.01562C21.3188 1.35 20.6484 0.9375 19.8609 0.632812C19.0969 0.3375 18.225 0.13125 16.95 0.075C15.6656 0.0140625 15.2578 0 12 0Z"
+                    fill="#FE6A5B"></path>
+                  <path
+                    d="M12 5.83594C8.59688 5.83594 5.83594 8.59688 5.83594 12C5.83594 15.4031 8.59688 18.1641 12 18.1641C15.4031 18.1641 18.1641 15.4031 18.1641 12C18.1641 8.59688 15.4031 5.83594 12 5.83594ZM12 15.9984C9.79219 15.9984 8.00156 14.2078 8.00156 12C8.00156 9.79219 9.79219 8.00156 12 8.00156C14.2078 8.00156 15.9984 9.79219 15.9984 12C15.9984 14.2078 14.2078 15.9984 12 15.9984Z"
+                    fill="#FE6A5B"></path>
+                  <path
+                    d="M19.8469 5.59238C19.8469 6.38926 19.2 7.03145 18.4078 7.03145C17.6109 7.03145 16.9688 6.38457 16.9688 5.59238C16.9688 4.79551 17.6156 4.15332 18.4078 4.15332C19.2 4.15332 19.8469 4.8002 19.8469 5.59238Z"
+                    fill="#FE6A5B"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-md-row flex-column justify-content-center justify-content-sm-start mt-sm-2 mt-4 pt-3 pt-sm-0 item-center pb-2">
+            <p class="opacity_05 text-white text-md-start text-center fw-normal fs_xsm lh_100 mb-0">
+              © Boddoohi &amp; Friedlander LLP 2022.
+            </p>
+            <p class="opacity_05 text-white text-md-start text-center my-md-0 my-2 fw-normal fs_xsm lh_100">
+              All rights reserved.
+            </p>
+            <p class="opacity_05 text-white text-md-start text-center fw-normal fs_xsm lh_100 mb-0 text-center">
+              &nbsp;Attorney Advertising: Prior results do not guarantee a
+              similar outcome.
             </p>
           </div>
         </div>
-        <div class="ms-sm-auto animation-element bounce-down in-view">
-          <img
-            src="./assets/images/news/news_bg.svg"
-            class="news_hero_image_desktop subject"
-          />
-          <img
-            src="./assets/images/news/news_bg_mobile_screen.svg"
-            class="news_hero_image_mobile subject w-100"
-          />
-        </div>
-      </div>
-    </main>
-    <!-- CARDS  -->
-    <div class="bg-black">
-      <div class="bg-white cards_border_radius_one_side">
-        <div class="cards_container">
-          <div class="cards_margin_padding row">
-            <!-- card 1  -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/suprme_court.webp"
-                  class="news-img w-100"
-                  alt="supreme court image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Another big win in Kings County, Supreme Court
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    <a
-                      href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-black opacity_07"
-                    >
-                      We obtained outright dismissal of a claim brought
-                      involving two separate real estate transactions, and
-                      claims under the New York Debtor and Creditor Law (i.e.,
-                      plaintiff claimed the two sales were fraudulent
-                      conveyances designed to avoid the payment of a judgment).
-                      The Commercial Division in Brooklyn agreed with us, and
-                      our fantastic innocent-by-stander client, and dismissed
-                      the case outright (and denied the plaintiff leave to
-                      amend), ruling (correctly) that there was absolutely
-                      nothing wrong with the transfers, in a well-reasoned, and
-                      interesting decision. (access it
-                    </a>
-                    <a
-                      class="color_bittersweet text-decoration-underline"
-                      href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link  "
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >here</a
-                    >).
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 2 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/big_win.webp"
-                  class="news-img w-100"
-                  alt="big win image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Big win in the SDNY
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    <a
-                      href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-black opacity_07"
-                    >
-                      We obtained a massive win in Federal Court, in the
-                      Southern District of New York, on behalf of our wonderful
-                      client, an international travel company. In this internet
-                      unfair competition/non-disparagement action, we obtained
-                      outright dismissal of the complaint in a decision issued
-                      by the Hon. Valerie E. Caproni. The decision was also
-                      written up in the New York Law Journal (access it</a
-                    >
-                    <a
-                      class="color_bittersweet text-decoration-underline"
-                      href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link  "
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >here</a
-                    >).
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 3 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/huge_victory.webp"
-                  class="news-img w-100"
-                  alt="huge victory image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Huge victory in the Appellate Division, First Department
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 opacity_07 text-black fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    This was a big victory our client, a wonderful New York
-                    cooperative corporation located in Queens, New York. On
-                    appeal, a panel of judges in Manhattan agreed with us and
-                    reversed the decision of the trial court to dismiss our
-                    client’s case, leading to the case being reinstated, and
-                    paving the way for a favorable resolution. In other words, a
-                    complete 360. The case involved a little known and often
-                    overlooked federal statute known as the Cooperative and
-                    Condominium Abuse Relief Act, that serves as a powerful tool
-                    for cooperatives and condominiums.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 4 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/big_win.webp"
-                  class="news-img w-100"
-                  alt="big win image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Another big win in the SDNY
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 opacity_07 text-black fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    This was round two in a battle between our client, a
-                    wonderful, well-known, and respected international travel
-                    company, and another travel company over purported claims of
-                    unfair competition under New York and California law. We
-                    obtained dismissal of the case once in August 2022, but the
-                    plaintiff was allowed to amend some of its claims. This
-                    time, Judge Valerie Caproni granted our motion and dismissed
-                    the amended complaint, with prejudice, and later awarded us
-                    costs and attorneys’ fees.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 5 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/esopus.webp"
-                  class="news-img w-100"
-                  alt="esopus image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Esopus Updates Proposed Marina Camping Rules
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    Milad Boddoohi Quoted in the Daily Freeman Concerning The
-                    Town of Esopus’ Passage of Zoning Regulations Governing
-                    Marinas.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 6 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/esopus_seeks.webp"
-                  class="news-img w-100"
-                  alt="esopus seeks image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Esopus Seeks to Revise Zoning for Marina RV Lodging
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    Milad Boddoohi quoted in the Daily Freeman concerning Town
-                    of Esopus vs. Castaways Marina
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 7 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/esopus_seeks.webp"
-                  class="news-img w-100"
-                  alt="esopus seeks image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Esopus Town Board Schedules Public Hearing On Proposed Law
-                      Allowing Camping At Marinas Along Rondout Creek
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    Milad Boddoohi quoted in the Daily Freeman concerning
-                    proposed law revising Town of Esopus’ zoning regulations.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 8 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/boddoohi.webp"
-                  class="news-img w-100"
-                  alt="boddoohi image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Boddoohi & Friedlander: New Law Alert:
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    On December 22, 2021, the New York State Legislature passed
-                    (and Governing Hochul signed into law) a law exempting
-                    cooperatives from several provisions of the HSTPA
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 9 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/milad_boddoohi.webp"
-                  class="news-img w-100"
-                  alt="milad boddoohi image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Milad Boddoohi in the New York Law Journal: Googling Your
-                      Way To Victory
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    A closer look at an underutilized tool rooted in the CPLR
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 10 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/milad_boddoohi_mam.webp"
-                  class="news-img w-100"
-                  alt="milad boddoohi man image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Milad Boddoohi in the Mann Report concerning the
-                      Condominium and Cooperative Protection and Abuse Relief
-                      Act.
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    Many cooperatives and condominiums have, for decades,
-                    overlooked potent statutory rights, enabling them to
-                    recapture building amenities currently under long-term,
-                    unfavorable leases with their developers
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 11 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/new_york.webp"
-                  class="news-img w-100"
-                  alt="new york image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Milad Boddoohi in the New York Law Journal: Not Out of
-                      Time, Not Out of Luck
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    An unsettled aspect of the Condominium and Cooperative
-                    Protection and Abuse Act may offer new hope.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- card 12 -->
-            <div class="col-12 col-sm-6 col-lg-4 new_data_card">
-              <div class="data">
-                <img
-                  src="./assets/images/news/new_york.webp"
-                  class="news-img w-100"
-                  alt="new york image"
-                />
-                <a
-                  href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                </a>
-                <div class="cards_box p-4">
-                  <a
-                    href="https://drive.google.com/file/d/1oiBY76-yaqE0XQHiUf0sBW9h_fTX-hBJ/view?usp=drive_link "
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h3 class="letter_0-3 fs_xl fw-bold lh_100 text-black">
-                      Milad Boddoohi in the New York Law Journal: When a Sex
-                      Offender Moves In
-                    </h3>
-                  </a>
-                  <p
-                    class="overflow-y-auto letter_0-3 text-black opacity_07 fs_sm fw-semibold lh_100 mb-0 pt-3"
-                  >
-                    What, if anything, is the obligation of a board of a
-                    condominium or cooperative when a convicted sex offender
-                    moves in?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-    <!-- anything section  -->
-    <div class="bg-black anything_section position-relative">
-      <div class="anything_container mx-auto py-5 px-lg-0 px-4">
-        <div class="row py-4 my-3 align-items-center">
-          <div class="col-md-6">
-            <div data-aos="fade-down" data-aos-duration="1000">
-              <h3
-                class="letter_0-3 text-white fw-bold lh_100 fs_2xl mb-0 anything_heading"
-              >
-                Anything you need, we are here.
-              </h3>
-              <p
-                class="text-white anything_second_para opacity_07 fw-normal lh_100 fs_sm mt-4"
-              >
-                Please reach out to us via phone, email, text, or the form here
-                if you have any questions for us.
-              </p>
-              <div class="my-3">
-                <p class="text-white fs_sm lh_100 fw-normal mb-3">
-                  Boddoohi &amp; Friedlander LLP
-                </p>
-                <!-- <br /> -->
-                <a
-                  href="https://goo.gl/maps/MhVbDPtmKzWAweFJ6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-white fs_sm fw-normal anything_link_text_hover transition_03"
-                >
-                  <span class="d-block"> New York City Office:</span>
-                  <span class="d-block"> 110 East 25th Street</span>
-                  <span class="d-block"> New York, New York 10010</span>
-                </a>
-                <!-- <br /> -->
-                <a
-                  href="https://maps.app.goo.gl/YNKQEtyfB5RiSHks6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-white fs_sm fw-normal mt-3 d-block anything_link_text_hover transition_03"
-                >
-                  <span class="d-block"> Hudson Valley Office:</span>
-                  <span class="d-block"> 291 Wall Street, 4th Floor</span>
-                  <span class="d-block"> Kingston, New York 12401</span>
-                </a>
-              </div>
-              <p
-                class="text-white fs_sm fw-normal mb-0 fw-normal lh_160 anything_link_text_hover transition_03"
-              >
-                Call or Text Us:
-              </p>
-              <a href="tel:+(347) 252 9922">
-                <p
-                  class="text-white fs_sm fw-normal mb-0 fw-normal lh_160 anything_link_text_hover transition_03"
-                >
-                  (347) 252 9922
-                </p>
-              </a>
-              <a href="mailto:hello@thebflawfirm.com">
-                <p
-                  class="text-white fw-normal lh_160 fs_sm mb-0 anything_link_text_hover transition_03"
-                >
-                  hello@thebflawfirm.com
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <form
-              onsubmit="handleSubmit(event)"
-              class="pt-md-0 pt-5 form_max_width"
-            >
-              <div class="w-100">
-                <input
-                  type="text"
-                  required=""
-                  class="contact_form"
-                  id="contact-form-name"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div class="mt-3 pt-1">
-                <input
-                  type="email"
-                  required=""
-                  class="contact_form"
-                  id="contact-form-email"
-                  placeholder="Email"
-                />
-              </div>
-              <div class="mt-3 pt-1">
-                <input
-                  type="number"
-                  class="contact_form"
-                  required=""
-                  id="contact-form-number"
-                  placeholder="Phone Number"
-                />
-              </div>
-              <div class="mt-3 pt-1">
-                <textarea
-                  class="contact_form"
-                  required=""
-                  placeholder="How can we help?"
-                  id="contact-form-message"
-                  rows="3"
-                ></textarea>
-              </div>
-              <div class="mt-3 pt-1">
-                <button
-                  type="submit"
-                  class="w-100 contact_form_btn"
-                  id="send-message-btn"
-                >
-                  Submit message
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- footer section  -->
-    <footer class="bg-black">
-      <div
-        class="row position-relative max_w_1440"
-        data-aos="fade-down"
-        data-aos-duration="1000"
-      >
-        <div class="image_col p-sm-0">
-          <img
-            src="./assets/images/icons/footer-img.svg"
-            alt="footer image"
-            class="d-sm-block d-none pointer_event_none"
-          />
-        </div>
-        <div class="footer_link_col mt-sm-5 pb-sm-0 pb-5 padding_xl_footer_col">
-          <div class="mt-sm-5 pt-sm-5">
-            <div class="d-flex justify-content-center justify-content-md-start">
-              <div>
-                <a href="#"
-                  ><img
-                    class="footer_logo"
-                    src="./assets/images/icons/logo.svg"
-                    alt="logo"
-                /></a>
-                <div
-                  class="social_icons_margin d-flex d-md-none justify-content-center mt-md-0 mt-4"
-                >
-                  <a
-                    class="pe-3"
-                    href="https://www.facebook.com/thebflawfirm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg
-                      class=""
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
-                        fill="#FE6A5B"
-                      ></path>
-                    </svg>
-                  </a>
+  </footer>
 
-                  <a
-                    href="https://www.instagram.com/thebflawfirm/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="transition_03s"
-                        d="M12 2.16094C15.2063 2.16094 15.5859 2.175 16.8469 2.23125C18.0188 2.28281 18.6516 2.47969 19.0734 2.64375C19.6313 2.85938 20.0344 3.12188 20.4516 3.53906C20.8734 3.96094 21.1313 4.35938 21.3469 4.91719C21.5109 5.33906 21.7078 5.97656 21.7594 7.14375C21.8156 8.40937 21.8297 8.78906 21.8297 11.9906C21.8297 15.1969 21.8156 15.5766 21.7594 16.8375C21.7078 18.0094 21.5109 18.6422 21.3469 19.0641C21.1313 19.6219 20.8687 20.025 20.4516 20.4422C20.0297 20.8641 19.6313 21.1219 19.0734 21.3375C18.6516 21.5016 18.0141 21.6984 16.8469 21.75C15.5813 21.8062 15.2016 21.8203 12 21.8203C8.79375 21.8203 8.41406 21.8062 7.15313 21.75C5.98125 21.6984 5.34844 21.5016 4.92656 21.3375C4.36875 21.1219 3.96563 20.8594 3.54844 20.4422C3.12656 20.0203 2.86875 19.6219 2.65313 19.0641C2.48906 18.6422 2.29219 18.0047 2.24063 16.8375C2.18438 15.5719 2.17031 15.1922 2.17031 11.9906C2.17031 8.78438 2.18438 8.40469 2.24063 7.14375C2.29219 5.97187 2.48906 5.33906 2.65313 4.91719C2.86875 4.35938 3.13125 3.95625 3.54844 3.53906C3.97031 3.11719 4.36875 2.85938 4.92656 2.64375C5.34844 2.47969 5.98594 2.28281 7.15313 2.23125C8.41406 2.175 8.79375 2.16094 12 2.16094ZM12 0C8.74219 0 8.33438 0.0140625 7.05469 0.0703125C5.77969 0.126563 4.90313 0.332812 4.14375 0.628125C3.35156 0.9375 2.68125 1.34531 2.01563 2.01562C1.34531 2.68125 0.9375 3.35156 0.628125 4.13906C0.332812 4.90313 0.126563 5.775 0.0703125 7.05C0.0140625 8.33437 0 8.74219 0 12C0 15.2578 0.0140625 15.6656 0.0703125 16.9453C0.126563 18.2203 0.332812 19.0969 0.628125 19.8563C0.9375 20.6484 1.34531 21.3188 2.01563 21.9844C2.68125 22.65 3.35156 23.0625 4.13906 23.3672C4.90313 23.6625 5.775 23.8687 7.05 23.925C8.32969 23.9812 8.7375 23.9953 11.9953 23.9953C15.2531 23.9953 15.6609 23.9812 16.9406 23.925C18.2156 23.8687 19.0922 23.6625 19.8516 23.3672C20.6391 23.0625 21.3094 22.65 21.975 21.9844C22.6406 21.3188 23.0531 20.6484 23.3578 19.8609C23.6531 19.0969 23.8594 18.225 23.9156 16.95C23.9719 15.6703 23.9859 15.2625 23.9859 12.0047C23.9859 8.74688 23.9719 8.33906 23.9156 7.05938C23.8594 5.78438 23.6531 4.90781 23.3578 4.14844C23.0625 3.35156 22.6547 2.68125 21.9844 2.01562C21.3188 1.35 20.6484 0.9375 19.8609 0.632812C19.0969 0.3375 18.225 0.13125 16.95 0.075C15.6656 0.0140625 15.2578 0 12 0Z"
-                        fill="#FE6A5B"
-                      ></path>
-                      <path
-                        d="M12 5.83594C8.59688 5.83594 5.83594 8.59688 5.83594 12C5.83594 15.4031 8.59688 18.1641 12 18.1641C15.4031 18.1641 18.1641 15.4031 18.1641 12C18.1641 8.59688 15.4031 5.83594 12 5.83594ZM12 15.9984C9.79219 15.9984 8.00156 14.2078 8.00156 12C8.00156 9.79219 9.79219 8.00156 12 8.00156C14.2078 8.00156 15.9984 9.79219 15.9984 12C15.9984 14.2078 14.2078 15.9984 12 15.9984Z"
-                        fill="#FE6A5B"
-                      ></path>
-                      <path
-                        d="M19.8469 5.59238C19.8469 6.38926 19.2 7.03145 18.4078 7.03145C17.6109 7.03145 16.9688 6.38457 16.9688 5.59238C16.9688 4.79551 17.6156 4.15332 18.4078 4.15332C19.2 4.15332 19.8469 4.8002 19.8469 5.59238Z"
-                        fill="#FE6A5B"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <hr class="footer_gray_hr bg-white w-100 my-4 mt-md-5" />
-            <div
-              class="d-flex mt-2 item-center justify-content-center justify-content-md-start"
-            >
-              <div
-                class="d-flex flex-sm-row flex-column justify-content-center justify-content-sm-start align-items-center gap-sm-0 gap-2"
-              >
-                <a
-                  class="fs_sm fw-semibold text-white footer_links_hover transition_03"
-                  href="#"
-                  >Back to Top</a
-                >
-                <a
-                  href="#"
-                  class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03"
-                  >Practice Areas</a
-                >
-                <a
-                  href="#"
-                  class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03"
-                  >News</a
-                >
-                <a
-                  href="#"
-                  class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03"
-                  >Team</a
-                >
-                <a
-                  href="#"
-                  class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03"
-                  >Contact</a
-                >
-              </div>
-              <div class="social_icons_margin d-md-flex d-none mt-sm-0 mt-4">
-                <a
-                  class="pe-3"
-                  href="https://www.facebook.com/thebflawfirm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg
-                    class=""
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
-                      fill="#FE6A5B"
-                    ></path>
-                  </svg>
-                </a>
-
-                <a
-                  href="https://www.instagram.com/thebflawfirm/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      class="transition_03s"
-                      d="M12 2.16094C15.2063 2.16094 15.5859 2.175 16.8469 2.23125C18.0188 2.28281 18.6516 2.47969 19.0734 2.64375C19.6313 2.85938 20.0344 3.12188 20.4516 3.53906C20.8734 3.96094 21.1313 4.35938 21.3469 4.91719C21.5109 5.33906 21.7078 5.97656 21.7594 7.14375C21.8156 8.40937 21.8297 8.78906 21.8297 11.9906C21.8297 15.1969 21.8156 15.5766 21.7594 16.8375C21.7078 18.0094 21.5109 18.6422 21.3469 19.0641C21.1313 19.6219 20.8687 20.025 20.4516 20.4422C20.0297 20.8641 19.6313 21.1219 19.0734 21.3375C18.6516 21.5016 18.0141 21.6984 16.8469 21.75C15.5813 21.8062 15.2016 21.8203 12 21.8203C8.79375 21.8203 8.41406 21.8062 7.15313 21.75C5.98125 21.6984 5.34844 21.5016 4.92656 21.3375C4.36875 21.1219 3.96563 20.8594 3.54844 20.4422C3.12656 20.0203 2.86875 19.6219 2.65313 19.0641C2.48906 18.6422 2.29219 18.0047 2.24063 16.8375C2.18438 15.5719 2.17031 15.1922 2.17031 11.9906C2.17031 8.78438 2.18438 8.40469 2.24063 7.14375C2.29219 5.97187 2.48906 5.33906 2.65313 4.91719C2.86875 4.35938 3.13125 3.95625 3.54844 3.53906C3.97031 3.11719 4.36875 2.85938 4.92656 2.64375C5.34844 2.47969 5.98594 2.28281 7.15313 2.23125C8.41406 2.175 8.79375 2.16094 12 2.16094ZM12 0C8.74219 0 8.33438 0.0140625 7.05469 0.0703125C5.77969 0.126563 4.90313 0.332812 4.14375 0.628125C3.35156 0.9375 2.68125 1.34531 2.01563 2.01562C1.34531 2.68125 0.9375 3.35156 0.628125 4.13906C0.332812 4.90313 0.126563 5.775 0.0703125 7.05C0.0140625 8.33437 0 8.74219 0 12C0 15.2578 0.0140625 15.6656 0.0703125 16.9453C0.126563 18.2203 0.332812 19.0969 0.628125 19.8563C0.9375 20.6484 1.34531 21.3188 2.01563 21.9844C2.68125 22.65 3.35156 23.0625 4.13906 23.3672C4.90313 23.6625 5.775 23.8687 7.05 23.925C8.32969 23.9812 8.7375 23.9953 11.9953 23.9953C15.2531 23.9953 15.6609 23.9812 16.9406 23.925C18.2156 23.8687 19.0922 23.6625 19.8516 23.3672C20.6391 23.0625 21.3094 22.65 21.975 21.9844C22.6406 21.3188 23.0531 20.6484 23.3578 19.8609C23.6531 19.0969 23.8594 18.225 23.9156 16.95C23.9719 15.6703 23.9859 15.2625 23.9859 12.0047C23.9859 8.74688 23.9719 8.33906 23.9156 7.05938C23.8594 5.78438 23.6531 4.90781 23.3578 4.14844C23.0625 3.35156 22.6547 2.68125 21.9844 2.01562C21.3188 1.35 20.6484 0.9375 19.8609 0.632812C19.0969 0.3375 18.225 0.13125 16.95 0.075C15.6656 0.0140625 15.2578 0 12 0Z"
-                      fill="#FE6A5B"
-                    ></path>
-                    <path
-                      d="M12 5.83594C8.59688 5.83594 5.83594 8.59688 5.83594 12C5.83594 15.4031 8.59688 18.1641 12 18.1641C15.4031 18.1641 18.1641 15.4031 18.1641 12C18.1641 8.59688 15.4031 5.83594 12 5.83594ZM12 15.9984C9.79219 15.9984 8.00156 14.2078 8.00156 12C8.00156 9.79219 9.79219 8.00156 12 8.00156C14.2078 8.00156 15.9984 9.79219 15.9984 12C15.9984 14.2078 14.2078 15.9984 12 15.9984Z"
-                      fill="#FE6A5B"
-                    ></path>
-                    <path
-                      d="M19.8469 5.59238C19.8469 6.38926 19.2 7.03145 18.4078 7.03145C17.6109 7.03145 16.9688 6.38457 16.9688 5.59238C16.9688 4.79551 17.6156 4.15332 18.4078 4.15332C19.2 4.15332 19.8469 4.8002 19.8469 5.59238Z"
-                      fill="#FE6A5B"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div
-              class="d-flex flex-md-row flex-column justify-content-center justify-content-sm-start mt-sm-2 mt-4 pt-3 pt-sm-0 item-center pb-2"
-            >
-              <p
-                class="opacity_05 text-white text-md-start text-center fw-normal fs_xsm lh_100 mb-0"
-              >
-                © Boddoohi &amp; Friedlander LLP 2022.
-              </p>
-              <p
-                class="opacity_05 text-white text-md-start text-center my-md-0 my-2 fw-normal fs_xsm lh_100"
-              >
-                All rights reserved.
-              </p>
-              <p
-                class="opacity_05 text-white text-md-start text-center fw-normal fs_xsm lh_100 mb-0 text-center"
-              >
-                &nbsp;Attorney Advertising: Prior results do not guarantee a
-                similar outcome.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      function showNav() {
-        document.getElementById("navBar").classList.toggle("showNav");
-        document.body.classList.toggle("nav_mobile_scroll");
-        document.getElementById("navToggleIcon").src =
-          navBar.classList.contains("showNav")
-            ? "/assets/images/icons/Cross.svg"
-            : "/assets/images/icons/nav-toggle.svg";
-      }
-    </script>
-    <!-- slider script link  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    function showNav() {
+      document.getElementById("navBar").classList.toggle("showNav");
+      document.body.classList.toggle("nav_mobile_scroll");
+      document.getElementById("navToggleIcon").src =
+        navBar.classList.contains("showNav")
+          ? "/assets/images/icons/Cross.svg"
+          : "/assets/images/icons/nav-toggle.svg";
+    }
+  </script>
+  <!-- slider script link  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="
         https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
         "></script>
-    <script src="/assets/js/app.js"></script>
-    <!-- AOS  -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
-  </body>
+  <script src="/assets/js/app.js"></script>
+  <!-- AOS  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+</body>
+
 </html>
