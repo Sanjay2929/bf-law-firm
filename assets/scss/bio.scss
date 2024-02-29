@@ -21,10 +21,11 @@
 a:hover rect {
   fill: #6c6969;
 }
-.back_to_top_header {
-  &:hover {
-    color: $color_1 !important;
-  }
+.back_to_top_header:hover h5 {
+  color: #6c6969 !important;
+}
+.back_to_top_header:hover svg path {
+  fill: #6c6969 !important;
 }
 
 .letter-01 {

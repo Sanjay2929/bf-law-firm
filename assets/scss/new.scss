@@ -78,6 +78,11 @@
 .back_to_top_header:hover svg path {
   fill: #6c6969 !important;
 }
+.news_header {
+  min-height: 0 !important;
+  max-height: none !important;
+  height: auto !important;
+}
 @media (min-width: 820px) and (max-width: 992px) {
   .news_hero_image_desktop {
     width: 100%;
@@ -122,7 +127,6 @@
   .news_side_nav {
     width: 30%;
   }
- 
 }
 @media (max-width: 767.98px) {
   .news_hero_image_desktop {
