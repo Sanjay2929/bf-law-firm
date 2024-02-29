@@ -46,14 +46,36 @@
 </head>
 
 <body>
-  <section class="bg-black">
+  <section class="bg-black bio_header">
     <div class="container main-container ps-0 pe-0">
       <div class="row m-0 p-0">
         <div class="col-lg-2">
-          <div class="row m-0 position-relative p-0">
-            <a href="index.html"><img src="./assets/images/icons/logo.svg" class="mt-4 header_logo" /></a>
+          <div class="m-0 pt-4 flex align-items-center flex-nowrap flex-row">
+            <div class="d-md-none menu_icon d-inline-block pe-2 position-relative">
+              <img onclick="showNav()" class="mobile-nav-icon d-block cursor_pointer" id="navToggleIcon"
+                src="/assets/images/icons/nav-toggle.svg" alt="toggle" />
+            </div>
+            <a class="bio_logo d-inline-block px-xl-0 px-lg-4 px-0" href="index.html"><img class="w-100"
+                src="./assets/images/icons/logo.svg" class="header_logo" alt="logo" /></a>
           </div>
         </div>
+        <ul id="navBar" class="d-flex mt-5 md:ms-2 flex-column ps-0 bio_nav_links d-md-none">
+          <li>
+            <a onclick="showNav()" href="index.html">Home</a>
+          </li>
+          <li>
+            <a onclick="showNav()" onclick="showNav()" href="#">Practice Areas</a>
+          </li>
+          <li id="news">
+            <a href="#" class="news_link">News</a>
+          </li>
+          <li>
+            <a onclick="showNav()" href="#">Team</a>
+          </li>
+          <li>
+            <a onclick="showNav()" href="#contact">Contact</a>
+          </li>
+        </ul>
 
         <div class="col-sm-6 col-lg-5 pb-sm-5 pt-xl-5 pb-4 bounce-up">
           <div
@@ -66,7 +88,8 @@
                   <path class="transition_03s" d="M8.87057 4.5H50.9999V7.5H8.87057V12L-5.34058e-05 6L8.87057 0V4.5Z"
                     fill="#FE6A5B" />
                 </svg>
-                <h5 class="letter_03 text-uppercase transition_03 ms-2 mb-0 fs_sm fw-bold lh_100 color_bittersweet ps-0">
+                <h5
+                  class="letter_03 text-uppercase transition_03 ms-2 mb-0 fs_sm fw-bold lh_100 color_bittersweet ps-0">
                   Back to Home
                 </h5>
               </a>
@@ -288,7 +311,7 @@
     </div>
   </section>
   <!-- anything section  -->
-  <div class="bg-black anything_section position-relative">
+  <div id="contact" class="bg-black anything_section position-relative">
     <div class="anything_container mx-auto py-5 px-lg-0 px-4">
       <div class="row py-4 my-3 align-items-center">
         <div class="col-md-6">
@@ -456,6 +479,8 @@
     crossorigin="anonymous"></script>
   <!-- AOS  -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- navbar js link  -->
+  <script src="/assets/js/nav.js"></script>
   <script>
     AOS.init({
       once: true,
