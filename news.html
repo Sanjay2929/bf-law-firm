@@ -58,19 +58,19 @@
         <a href="/"><img src="/assets/images/icons/logo.svg" alt="logo" /></a>
         <ul id="navBar" class="d-flex mt-5 md:ms-2 flex-column ps-0 navbar_links d-md-none">
           <li>
-            <a href="index.html">Home</a>
+            <a onclick="showNav()" href="index.html">Home</a>
           </li>
           <li>
-            <a href="#">Practice Areas</a>
+            <a onclick="showNav()" href="/#practice">Practice Areas</a>
           </li>
           <li id="news">
-            <a href="#" class="news_link">News</a>
+            <a onclick="showNav()" href="#" class="news_link">News</a>
           </li>
           <li>
-            <a href="#">Team</a>
+            <a onclick="showNav()" href="/#milad">Team</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a onclick="showNav()" href="/#form">Contact</a>
           </li>
         </ul>
       </div>
@@ -489,7 +489,7 @@
   </div>
   <!-- footer section  -->
   <footer class="bg-black">
-    <div class="row position-relative max_w_1440" data-aos="fade-down" data-aos-duration="1000">
+    <div class="row position-relative max_w_1440 pt-3" data-aos="fade-down" data-aos-duration="1000">
       <div class="image_col p-sm-0">
         <img src="./assets/images/icons/footer-img.svg" alt="footer image"
           class="d-sm-block d-none pointer_event_none" />
@@ -529,12 +529,14 @@
           <div class="d-flex mt-2 item-center justify-content-center justify-content-md-start">
             <div
               class="d-flex flex-sm-row flex-column justify-content-center justify-content-sm-start align-items-center gap-sm-0 gap-2">
-              <a class="fs_sm fw-semibold text-white footer_links_hover transition_03" href="#">Back to Top</a>
-              <a href="#" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">Practice
+              <a class="fs_sm fw-semibold text-white footer_links_hover transition_03" href="#">Back to
+                Top</a>
+              <a href="#practice" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">Practice
                 Areas</a>
-              <a href="#" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">News</a>
-              <a href="#" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">Team</a>
-              <a href="#" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">Contact</a>
+              <a href="/news.html"
+                class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">News</a>
+              <a href="#milad" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">Team</a>
+              <a href="#form" class="ms-sm-5 fs_sm fw-semibold text-white footer_links_hover transition_03">Contact</a>
             </div>
             <div class="social_icons_margin d-md-flex d-none mt-sm-0 mt-4">
               <a class="pe-3" href="https://www.facebook.com/thebflawfirm" target="_blank" rel="noopener noreferrer">
@@ -581,22 +583,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script>
-    function showNav() {
-      document.getElementById("navBar").classList.toggle("showNav");
-      document.body.classList.toggle("nav_mobile_scroll");
-      document.getElementById("navToggleIcon").src =
-        navBar.classList.contains("showNav")
-          ? "/assets/images/icons/Cross.svg"
-          : "/assets/images/icons/nav-toggle.svg";
-    }
-  </script>
+
+  <script src="./assets/js/nav.js"></script>
   <!-- slider script link  -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="
         https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
         "></script>
   <script src="/assets/js/app.js"></script>
+  
+
   <!-- AOS  -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

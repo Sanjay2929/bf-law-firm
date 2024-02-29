@@ -55,3 +55,29 @@ $(".news_slider").slick({
     },
   ],
 });
+//  EMAIL JS
+emailjs.init("LW2Wm7Cttqkugc2Tf");
+function sendEmail(event) {
+  event.preventDefault();
+  const templateParams = {
+    form_name: document.getElementById("form_name").value,
+    form_email: document.getElementById("form_email").value,
+    phone_number: document.getElementById("phone_number").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs.send("service_za4va8f", "template_1tzdvgw", templateParams).then(
+    function (response) {
+      console.log("Email sent successfully", response);
+      resetForm();
+    },
+    function (error) {
+      console.error("Email failed to send", error);
+    }
+  );
+}
+function resetForm() {
+  document.getElementById("form_name").value = "";
+  document.getElementById("form_email").value = "";
+  document.getElementById("phone_number").value = "";
+  document.getElementById("message").value = "";
+}

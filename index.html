@@ -59,16 +59,16 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Practice Areas</a>
+            <a href="#practice">Practice Areas</a>
           </li>
           <li>
             <a href="/news.html">News</a>
           </li>
           <li>
-            <a href="#">Team</a>
+            <a href="#milad">Team</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#form">Contact</a>
           </li>
         </ul>
       </div>
@@ -814,21 +814,9 @@
       once: true,
     });
   </script>
-  <!--- Email.Js -->
+  <!-- email  -->
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    emailjs.init("LW2Wm7Cttqkugc2Tf");
-    function sendEmail() {
-      event.preventDefault();
-      const templateParams = {
-        form_name: document.getElementById("form_name").value,
-        form_email: document.getElementById("form_email").value,
-        phone_number: document.getElementById("phone_number").value,
-        message: document.getElementById("message").value,
-      };
-      emailjs.send("service_za4va8f", "template_1tzdvgw", templateParams);
-    }
-  </script>
+ 
 </body>
 
 </html>
