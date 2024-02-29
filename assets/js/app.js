@@ -1,8 +1,8 @@
 $(".news_slider").slick({
   infinite: true,
-  slidesToShow: 3.2,
+  slidesToShow: 3.1,
   centerMode: true,
-  centerPadding: "110px",
+  centerPadding: "40px",
   slidesToScroll: 1,
   prevArrow: $(".slick-prev"),
   nextArrow: $(".slick-next"),
@@ -15,10 +15,17 @@ $(".news_slider").slick({
       },
     },
     {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 2.1,
+        centerPadding: "60px",
+      },
+    },
+    {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 2.2,
-        centerPadding: "82px",
+        slidesToShow: 2.1,
+        centerPadding: "42px",
       },
     },
     {
@@ -40,8 +47,8 @@ $(".news_slider").slick({
     {
       breakpoint: 576,
       settings: {
-        slidesToShow: 1.01,
-        centerPadding: "60px",
+        slidesToShow: 1.1,
+        centerPadding: "20px",
         autoplay: true,
         autoplaySpeed: 2000,
       },
